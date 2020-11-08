@@ -1,0 +1,493 @@
+
+/* login-box */
+.login-box {
+	max-width: 1100px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.login-box > .item {
+	max-width: 500px;
+	padding: 40px;
+	border-radius: 3px;
+	background-color: #fff;
+	z-index:3;
+	position:relative
+}
+.login-box > .item > .title {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.6;
+	margin-bottom: 15px;
+}
+.login-box > .item > .form-box > .input-box {
+	margin-bottom: 5px;
+}
+.login-box > .item > .or-box {
+	margin: 17px auto;
+	position: relative;
+	font-size: 12px;
+	color: #6A6A6A;
+	text-align: center;
+	line-height: 1.6;
+}
+.login-box > .item > .or-box > span {
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+	padding: 1px 7px 0;
+	background-color: #fff;
+}
+.login-box > .item > .or-box:before {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: #D8D8D8;
+}
+.login-box > .item > .note {
+	margin: 12px auto 0;
+	font-size: 12px;
+	line-height: 1.6;
+	color: #6A6A6A;
+}
+.login-box > .item > .link-sm {
+	font-size: 12px;
+	line-height: 1.6;
+	color: $red;
+}
+.login-box > .item > p {
+	font-size: 15px;
+	line-height: 1.8;
+	margin: 15px auto 0;
+}
+.login-box > .item > .label {
+	margin: 22px auto 8px;
+	border-top: 1px solid #D8D8D8;
+	padding-top: 22px;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 1.8;
+}
+/* form-box */
+.form-box .input-box > .item {
+	width: 100%;
+	margin-bottom: 10px;
+}
+.form-box .input-box > .item:last-child {
+	margin-bottom: 0;
+}
+.form-box .input-box label {
+	font-size: 12px;
+	color: #6A6A6A;
+	line-height: 1.6;
+	margin-bottom: 5px;
+}
+.form-box .input-box input {
+	width: 100%;
+	border: 1px solid #E6DAC4;
+	border-radius: 4px;
+	background-color: #FCF6ED;
+	padding: 10px 20px;
+	font-size: 15px;
+}
+.form-box .check-box {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 11px auto 20px;
+}
+.form-box .check-box.mb0 {
+	margin-bottom: 0;
+}
+.form-box .check-box > .link {
+	font-size: 12px;
+	line-height: 1.6;
+	color: $red;
+	a{
+		color: $red;
+	}
+}
+.form-box .btn-box > .btn {
+	width: 100%;
+	height: 62px;
+}
+.form-box .btn-box > .btn > a {
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	transition: all .3s;
+}
+.form-box .btn-box > .btn > a:hover {
+	opacity: .7;
+}
+.form-box .btn-box > .btn > a > span {
+	display: inline-block;
+	padding-top: 4px;
+}
+.form-box .btn-box > .btn.orange > a {
+	background-color: $red;
+	color: #fff;
+}
+.form-box .btn-box > .btn.fb > a {
+	background-color: #3A5999;
+	color: #fff;
+}
+.form-box .btn-box > .btn.border {
+	> a {
+		border: 1px solid #D8D8D8;
+		color: #919191;
+		background-repeat: no-repeat;
+		background-position: center right 20px;
+		background-size: 9px auto;
+		position:relative;
+		&:before{
+		    position: absolute;
+		    content: "";
+		    width: 10px;
+		    height: 8px;
+		    background: #DC000C;
+		    right: 20px;
+		    border: 1px solid #fff;
+		    z-index: 2;
+		}
+		&:after{
+			position: absolute;
+		    content: "";
+		    width: 9px;
+		    height: 7px;
+		    background: #DC000C;
+		    right: 24px;
+		    top: 25px;
+		}
+	}
+}
+.form-box .btn-box > .btn.border.no-img > a {
+	background-image: none;
+}
+.form-box .btn-box.col-2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.form-box .btn-box.col-2 > .btn {
+	width: 255px;
+	margin: 0 5px;
+}
+.form-box .select-box {
+	display: flex;
+	align-items: center;
+}
+.form-box .select-box > .unit {
+	position: relative;
+}
+.form-box .select-box > .unit:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: left top;
+	transform: translateY(-50%);
+	pointer-events: none;
+}
+.form-box .select-box > .unit.sm:after {
+	width: 9px;
+	height: 23px;
+	right: 13px;
+	background-image: url(../img/icon_arrow_02.png);
+}
+.form-box .select-box > .unit.lg:after {
+	width: 9px;
+	height: 6px;
+	right: 17px;
+	background-image: url(../img/icon_arrow_01.png);
+}
+.form-box .select-box.inline > .unit:after {
+	margin-top: 9px;
+}
+.form-box .select-box > .unit > select {
+	width: 100%;
+	border: 1px solid #E6DAC4;
+	border-radius: 4px;
+	background-color: #FCF6ED;
+	padding: 10px 20px;
+	font-size: 15px;
+	-webkit-appearance: none;
+	appearance: none;
+	box-sizing: border-box;
+}
+.form-box .select-box > .unit > select.select-1 {
+	width: 100px;
+}
+.form-box .select-box > .unit > select.select-2 {
+	width: 80px;
+}
+.form-box .select-box > .unit > select.select-3 {
+	width: 210px;
+}
+.form-box .select-box > .unit > select.select-4 {
+	width: 200px;
+}
+.form-box .select-box > .unit > select.select-5 {
+	width: 120px;
+}
+.form-box .select-box > .unit > select.select-6 {
+	width: 74px;
+}
+.form-box .select-box > .unit > select.select-7 {
+	width: 405px;
+}
+.form-box .select-box > .unit > select.select-8 {
+	width: 340px;
+}
+.form-box .select-box > .text {
+	font-size: 15px;
+	display: inline-block;
+	margin: 0 11px 0 6px;
+	line-height: 1;
+}
+.form-box .select-box.col > .unit:last-child {
+	margin-left: 16px;
+}
+.form-box .input-box > .unit > textarea {
+	width: 100%;
+	border: 1px solid #E6DAC4;
+	border-radius: 4px;
+	background-color: #FCF6ED;
+	padding: 10px 20px;
+	font-size: 15px;
+	-webkit-appearance: none;
+	appearance: none;
+	box-sizing: border-box;
+	height: 120px;
+}
+.form-box .input-box > .unit.big > textarea {
+	height: 200px;
+}
+.form-box .button-box > .box {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+}
+.form-box .button-box > .box > .text {
+	font-size: 12px;
+	color: #6A6A6A;
+	margin-left: 10px;
+}
+.form-box .button-box > .upload {
+	background-color: #FCF6ED;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	padding: 30px 26px;
+}
+.form-box .button-box > .upload.progress {
+	padding: 20px 17px;
+}
+.form-box .button-box > .upload.complete {
+	padding: 34px 20px 30px 16px;
+}
+.form-box .button-box > .upload  > .item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.form-box .button-box > .upload  > .item > .name-box {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-right: 26px;
+}
+.form-box .button-box > .upload  > .item > .name-box > .name {
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 1.8;
+}
+.form-box .button-box > .upload  > .item > .name-box > .delete {
+	cursor: pointer;
+	transition: all .3s;
+}
+.form-box .button-box > .upload  > .item > .name-box > .delete:hover {
+	opacity: .7;
+}
+.form-box .button-box > .upload  > .item > .upload-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-right: 19px;
+	flex: 1;
+}
+.form-box .button-box > .upload  > .item > .upload-box > .img {
+	margin-right: 12px;
+}
+.form-box .button-box > .upload  > .item > .upload-box > .progress-box {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex: 1;
+}
+.form-box .button-box > .upload  > .item > .upload-box > .progress-box > .name {
+	font-size: 12px;
+	line-height: 1.6;
+}
+.form-box .button-box > .upload  > .item > .upload-box > .progress-box > .close {
+	cursor: pointer;
+}
+.form-box .button-box > .upload  > .item > .upload-box > .progress-box > .close img {
+	display: block;
+}
+.form-box .button-box > .upload  > .item > .upload-box > .progress-box > .progress {
+	width: 100%;
+	margin-top: 18px;
+}
+.form-box .button-box > .upload  > .item > .upload-box > .progress-box > .progress > progress {
+	display: none;
+}
+.form-box .button-box > .upload  > .item > .upload-box > .progress-box > .progress > .bar {
+	position: relative;
+	width: 100%;
+	height: 4px;
+	background-color: #EBEBEB;
+}
+.form-box .button-box > .upload  > .item > .upload-box > .progress-box > .progress > .bar > .border {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 4px;
+	background-color: $red;
+	transition: all .3s;
+}
+.form-box .button-box > .upload  > .item > .btn > button {
+	font-size: 16px;
+    line-height: 1;
+    font-weight: bold;
+    width: 198px;
+    border-radius: 4px;
+	transition: all .3s;
+	background-color: $red;
+	color: #fff;
+	padding: 13px 0 11px;
+	text-align: center;
+	border: none;
+	font-weight: normal;
+	cursor: pointer;
+	transition: all .3s;
+}
+.form-box .button-box > .upload  > .item > .btn.disabled > button {
+	background-color: #F7F7F7;
+	color: #D8D8D8;
+	cursor: default;
+	opacity: 1 !important;
+}
+.form-box .button-box > .upload  > .item > .btn > button:hover {
+	opacity: .7;
+}
+.form-box .button-box > .upload  > .complete-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.form-box .button-box > .upload  > .complete-box > .name {
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 1.6;
+}
+.form-box .button-box > .upload  > .complete-box > .delete {
+	transition: all .3s;
+	cursor: pointer;
+}
+.form-box .button-box > .upload  > .complete-box > .delete > img {
+	display: block;
+}
+.form-box .button-box > .upload  > .complete-box > .delete:hover {
+	opacity: .7;
+}
+.form-box .button-box > .detail {
+	font-size: 12px;
+	line-height: 1.4;
+
+}
+/* checkbox */
+.checkbox {
+	position: relative;
+}
+.checkbox > input {
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	margin: 0;
+}
+.checkbox > label {
+	padding: 8px 0 0 40px;
+	position: relative;
+	font-size: 12px;
+	color: #6A6A6A;
+	line-height: 1.4;
+	display: block;
+	min-height: 30px;
+	cursor: pointer;
+}
+.checkbox.parent > label {
+	margin-left: 0;
+}
+.checkbox > label:before {
+	content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #D8D8D8;
+    background: #fff;
+	border-radius: 4px;
+	z-index: 0;
+	box-sizing: border-box;
+}
+.form-box{
+	.checkbox > input:checked + label:after {
+		content: '';
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    width: 30px;
+		height: 30px;
+		background-color: $red;
+		background-image: url(../images/sticker/checkbox.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 14px auto;
+		border-radius: 4px;
+		z-index: 1;
+	}
+	.border{
+		border:none !important;
+	}
+}
+@media(max-width: 768px){
+	.login-box{
+		display: block;
+	}
+	.login-box > .item{
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
+}
+@media(min-width: 1024px) and (max-width: 1366px){
+	.login-box > .item{
+		max-width: 470px;
+	}
+}

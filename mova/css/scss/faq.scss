@@ -1,0 +1,149 @@
+/*reset faq*/
+.radius-type2{
+    border-radius: 40px 0px 0px 40px;
+    background-color: #F5F5F5;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    .btn-red{
+      margin: auto;
+      margin-top: 90px;
+      margin-bottom: 120px;
+    }
+}
+.faq-section {
+  [aria-expanded="true"]{
+      background: $red;
+      color: #fff !important;
+    }
+
+    [aria-expanded="true"]:before {
+      transform: rotate(0deg) !important;
+      background: #fff !important;
+      z-index: 1;
+    }
+}
+.faq {
+    .card{
+        border: none;
+        background: none;
+        border-bottom: 1px solid #fff;
+        .card-header{
+             padding: 0px;
+            border: none;
+            background: #E8E8E8;
+            -webkit-transition: all 0.3s ease 0s;
+            -moz-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+            &.active{
+                background: $red;
+                .faq-title{
+                  color: #fff;
+                }
+            }
+            &:hover{
+                background: $red;
+                padding-left: 10px;
+                .faq-title{
+                    color: #fff;
+                }
+            }
+            .faq-title{
+              width: 100%;
+              text-align: left;
+              padding: 23px 20px; 
+              margin-bottom: 0;
+              font-family: $Yb;
+              color: #585757;
+              font-size: 14px;
+              text-decoration: none !important;
+              -webkit-transition: all 0.3s ease 0s;
+              -moz-transition: all 0.3s ease 0s;
+              -o-transition: all 0.3s ease 0s;
+              transition: all 0.3s ease 0s;
+              cursor: pointer;
+              position: relative;
+              &:after{
+                  position:absolute;
+                  content: "";
+                  width: 10px;
+                  height: 2px;
+                  background: #585757;
+                  border-radius: 2px;
+                  transition: all .25s cubic-bezier(0.4, 0.0, 0.2, 1);
+                  right: 20px;
+                  top: 48%;
+              }
+              &:before{
+                  content: '';
+                  position: absolute;
+                  width: 10px;
+                  height: 2px;
+                  background: #585757;
+                  border-radius: 2px;
+                  transition: all .25s cubic-bezier(0.4, 0.0, 0.2, 1);
+                  transform: rotate(90deg);
+                  right: 20px;
+                  top: 0;
+                  bottom: 0;
+                  margin: auto;
+              }
+              &.active{
+                  &:before{
+                      transform: rotate(0deg);
+                  }
+              }
+              p{
+                  padding: 0 190px;
+                  margin-bottom: 10px;
+              }
+              .badge{
+                  display: inline-block;
+                  width: 20px;
+                  height: 20px;
+                  line-height: 14px;
+                  float: left;
+                  -webkit-border-radius: 100px;
+                  -moz-border-radius: 100px;
+                  border-radius: 100px;
+                  text-align: center;
+                  background: #E91E63;
+                  color: #fff;
+                  font-size: 12px;
+                  margin-right: 20px;
+              }
+            }
+        }
+        .card-body{
+            padding: 20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            font-size: 14px;
+            line-height: 28px;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .faq {
+        margin-bottom: 30px;
+    }
+
+    .faq .card .card-header .faq-title {
+        line-height: 26px;
+    }
+}
+@media (max-width: 767px){
+    .faq .card .card-header .faq-title{
+      line-height: 10px;
+    }
+    .faq .card .card-header .faq-title:after{
+      top: 49%;
+    }
+    .radius-type2{
+        .btn-red{
+          margin: auto;
+          margin-top: 40px;
+          margin-bottom: 60px;
+        }
+    }
+}

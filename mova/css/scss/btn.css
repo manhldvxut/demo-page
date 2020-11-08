@@ -1,0 +1,243 @@
+.btn-red {
+  color: #DC000C;
+  z-index: 1;
+  padding: 23px 0;
+  font-size: 16px;
+  font-family: "YuGothic-Bold";
+  border: 1px solid #DC000C;
+  position: relative;
+  background: linear-gradient(to right, #DC000C 50%, #fff 50%);
+  background-position: right bottom;
+  background-size: 200% 100%;
+  transition: all .4s ease;
+  border-radius: 70px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  line-height: 1; }
+  .btn-red:hover {
+    background-position: left bottom;
+    color: #fff; }
+    .btn-red:hover span .a {
+      fill: #fff; }
+
+.btn-cic {
+  background: linear-gradient(to right, #DC000C 50%, #fff 50%);
+  background-position: right bottom;
+  background-size: 200% 100%;
+  transition: all .4s ease;
+  display: flex;
+  width: 245px;
+  height: 70px;
+  border: 1px solid #DC000C;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #DC000C;
+  font-family: "YuGothic-Bold";
+  justify-content: space-around;
+  align-items: center; }
+  .btn-cic:hover {
+    background-position: left bottom;
+    color: #fff; }
+    .btn-cic:hover .a {
+      fill: #fff;
+      transition: all .4s ease; }
+    .btn-cic:hover .b {
+      fill: #DC000C;
+      transition: all .4s ease; }
+  .btn-cic span {
+    margin-top: 5px; }
+
+.btn-border-radius {
+  width: 131px;
+  height: 35px;
+  border: 1px solid #D0D0D0;
+  border-radius: 18px;
+  color: #8E8E8E;
+  font-size: 12px;
+  font-family: "YuGothic-Bold";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  background: linear-gradient(to right, #DC000C 50%, #fff 50%);
+  background-position: right bottom;
+  background-size: 200% 100%;
+  transition: all .4s ease; }
+  .btn-border-radius:hover {
+    background-position: left bottom;
+    color: #fff; }
+
+@media (max-width: 767px) {
+  .btn-red {
+    width: 100%; } }
+.btn-gradien {
+  color: #fff;
+  font-size: 16px;
+  font-family: "YuGothic-Bold";
+  background: transparent linear-gradient(270deg, #DC000C 0%, #EF7D84 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 0px #AD0E17;
+  transition: all .4s ease-in-out;
+  border-radius: 70px;
+  padding: 23px 0;
+  width: 300px;
+  text-align: center;
+  transition: all .4s ease;
+  display: block;
+  position: relative;
+  z-index: 2; }
+  .btn-gradien:hover {
+    background: transparent linear-gradient(0, #DC000C 0%, #EF7D84 100%) 0% 0% no-repeat padding-box;
+    transition: all .4s ease-in-out;
+    color: #fff; }
+
+/*sub menu*/
+.submenu-info ul li {
+  background: linear-gradient(to right, #DC000C 50%, #fff 50%);
+  background-position: right bottom;
+  background-size: 200% 100%;
+  transition: all .4s ease; }
+  .submenu-info ul li:hover {
+    background-position: left bottom; }
+    .submenu-info ul li:hover a {
+      color: #fff; }
+    .submenu-info ul li:hover .a {
+      fill: #fff;
+      transition: all .4s ease; }
+    .submenu-info ul li:hover .b {
+      fill: #DC000C;
+      transition: all .4s ease; }
+
+/*icon*/
+.pdf {
+  position: relative; }
+  .pdf:before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 14px;
+    background: url(../images/top/icon_pdf.svg) no-repeat center;
+    top: 0;
+    bottom: 0;
+    padding-left: 30px;
+    margin: auto; }
+
+/*category*/
+/*hover text*/
+a {
+  transition: .3s all; }
+
+/*link*/
+.link-cic, .link-brank, .link-pdf, .link-excel {
+  color: #DC000C;
+  font-size: 12px;
+  font-family: "YuGothic-Regular";
+  position: relative;
+  display: block;
+  transition: 0.4s all; }
+  .link-cic:after, .link-brank:after, .link-pdf:after, .link-excel:after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: url("../images/news/textlink.svg") no-repeat center;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding-right: 30px; }
+
+.link-cic:hover {
+  color: #585757;
+  transform: translate3d(10px, 0px, 0); }
+  .link-cic:hover:after {
+    background: url("../images/news/textlink-blue.svg") no-repeat center; }
+
+.link-brank:after {
+  background: url("../images/news/brank-icon.svg") no-repeat center; }
+
+.link-brank:hover {
+  color: #585757;
+  transform: translate3d(10px, 0px, 0); }
+  .link-brank:hover:after {
+    background: url("../images/news/brank-icon-blue.svg") no-repeat center; }
+
+.link-pdf:after {
+  width: 8px;
+  height: 10px;
+  background: url("../images/news/file-pdf.svg") no-repeat center; }
+
+.link-pdf:hover {
+  color: #585757;
+  transform: translate3d(10px, 0px, 0); }
+  .link-pdf:hover:after {
+    background: url("../images/news/file-pdf-blue.svg") no-repeat center; }
+
+.link-excel:after {
+  width: 8px;
+  height: 10px;
+  background: url("../images/news/file-excel.svg") no-repeat center; }
+
+.link-excel:hover {
+  transform: translate3d(10px, 0px, 0);
+  color: #585757; }
+  .link-excel:hover:after {
+    background: url("../images/news/file-excel-blue.svg") no-repeat center; }
+
+.text-underline {
+  color: #DC000C;
+  font-family: "YuGothic-Regular";
+  font-size: 12px;
+  text-decoration: underline;
+  transition: 0.4s all; }
+  .text-underline:hover {
+    color: #585757; }
+
+.closed {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid #DC000C;
+  display: block; }
+  .closed:hover {
+    border-color: #fff; }
+  .closed:before {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background: url("../images/news/close-icon.svg") no-repeat center;
+    top: 14px;
+    left: 14px; }
+
+.box-text-red {
+  overflow: hidden; }
+  .box-text-red img {
+    border-radius: 4px 4px 0px 0px;
+    transition: 0.4s all; }
+  .box-text-red:hover img {
+    transform: scale(1.1); }
+  .box-text-red .btn-line-red {
+    position: relative;
+    background: linear-gradient(to right, #DC000C 50%, #fff 50%);
+    background-position: right bottom;
+    background-size: 200% 100%;
+    transition: all .4s ease;
+    font-family: "YuGothic-Bold";
+    color: #DC000C;
+    padding: 22px 20px;
+    border-bottom: 1px solid #DC000C;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px; }
+    .box-text-red .btn-line-red:hover {
+      background-position: left bottom;
+      color: #fff; }
+      .box-text-red .btn-line-red:hover span .a {
+        fill: #fff; }
+      .box-text-red .btn-line-red:hover span .b {
+        fill: #DC000C; }
+
+/*# sourceMappingURL=btn.css.map */
