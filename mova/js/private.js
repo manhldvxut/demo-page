@@ -87,17 +87,37 @@ $(document).ready(function(){
     else $(this).css({color: "#ccc"});
   });
 
-   /*sticker changer color select js*/
-   $(".sti-sl-op select").change(function(){
-    if ($(this).val()=="") $(this).css({color: "#DC000C"});
-    else $(this).css({color: "#ccc"});
-  });
-   /*reset select--option*/
-    $('#reset').click(function(){
-        $('#options, #choices-01, #choices-02').prop('selectedIndex',0);
-    })
-    $( ".sl-op" ).click(function() {
-      $(this).toggleClass('active'); 
+    /*Dropdown Menu*/
+    $('.dropdown').click(function () {
+        $(this).attr('tabindex', 1).focus();
+        $(this).toggleClass('active');
+        $(this).find('.dropdown-menu').slideToggle(300);
     });
-
+    $('.dropdown').focusout(function () {
+        $(this).removeClass('active');
+        $(this).find('.dropdown-menu').slideUp(300);
+    });
+    $('.dropdown .dropdown-menu li').click(function () {
+        $(this).parents('.dropdown').find('span').text($(this).text());
+        $(this).parents('.dropdown').find('input').attr('value', $(this).attr('id'));
+    });
+    /*reset*/
+    $( "#reset" ).click(function() {
+      document.getElementById('rs-id-01').innerHTML ='都道府県で絞り込む';
+      document.getElementById('rs-id-02').innerHTML ='業種で絞り込む';
+      document.getElementById('rs-id-03').innerHTML ='ご利用プランで絞り込む';
+    });
+    
+    /*my page sp*/
+    $('.toggle-btn').click(function () {
+      if ($('body').hasClass('toggle-show')) {
+        $('body').removeClass('toggle-show');
+        $('.toggle-title .text').text('マイページメニュー');
+        $('aside .search-box').slideUp(500);
+      } else {
+        $('body').addClass('toggle-show');
+        $('.toggle-title .text').text('閉じる');
+        $('aside .search-box').slideDown(500);
+      }
+    });
 })

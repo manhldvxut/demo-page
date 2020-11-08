@@ -3805,18 +3805,27 @@ a {
 .service-other-page .ser-list {
   padding-bottom: 30px; }
 
-.sticker-content h5 {
-  color: #DC000C;
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 55px; }
-
-.sti-sl-op {
+.sti-dropdw {
+  margin-bottom: 40px;
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 40px; }
-  .sti-sl-op select {
+  /*Styling Selectbox*/ }
+  .sti-dropdw span.choose {
+    color: #555;
+    padding: 5px 0 10px;
+    display: inherit; }
+  .sti-dropdw button {
+    position: relative;
+    display: block;
+    width: 144px;
+    height: 60px;
+    background: #DC000C;
+    color: #fff;
+    font-weight: bold;
+    outline: auto;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; }
+  .sti-dropdw .dropdown {
     width: 275px;
     height: 60px;
     border: 1px solid #DC0916;
@@ -3827,37 +3836,81 @@ a {
     color: #DC000C;
     padding-left: 18px;
     position: relative;
-    display: block;
+    display: inline-flex;
+    align-items: center;
     outline-color: #DC000C;
-    appearance: none; }
-  .sti-sl-op button {
-    position: relative;
-    display: block;
-    width: 144px;
-    height: 60px;
-    background: #DC000C;
-    color: #fff;
-    font-weight: bold;
-    outline: auto;
-    border-radius: 4px;
-    cursor: pointer; }
-  .sti-sl-op .sl-op {
-    position: relative;
-    margin-bottom: 10px; }
-    .sti-sl-op .sl-op:before {
+    appearance: none;
+    background: #fff;
+    position: relative; }
+    .sti-dropdw .dropdown:before {
       position: absolute;
       content: "";
       width: 7px;
       height: 8px;
-      background: url("../images/sticker/right.svg") no-repeat center;
-      right: 42px;
+      background: url(../images/sticker/right.svg) no-repeat center;
+      right: 22px;
       top: 0;
       bottom: 0;
       margin: auto;
       z-index: 1;
       transition: .3s all; }
-    .sti-sl-op .sl-op.active:before {
+    .sti-dropdw .dropdown.active:before {
       transform: rotate(90deg); }
+  .sti-dropdw .dropdown .select {
+    cursor: pointer;
+    display: block; }
+  .sti-dropdw .dropdown .select > i {
+    font-size: 13px;
+    color: #888;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    float: right;
+    line-height: 20px; }
+  .sti-dropdw .dropdown:hover {
+    box-shadow: 0 0 4px #cccccc; }
+  .sti-dropdw .dropdown:active {
+    background-color: #f8f8f8; }
+  .sti-dropdw .dropdown.active:hover,
+  .sti-dropdw .dropdown.active {
+    box-shadow: 0 0 4px #cccccc;
+    border-radius: 2px 2px 0 0;
+    background-color: #f8f8f8; }
+  .sti-dropdw .dropdown.active .select > i {
+    transform: rotate(-90deg); }
+  .sti-dropdw .dropdown .dropdown-menu {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    margin-top: 1px;
+    border-radius: 0 1px 2px 2px;
+    overflow: hidden;
+    display: none;
+    max-height: 144px;
+    overflow-y: auto;
+    z-index: 9;
+    color: #DC000C;
+    border: 1px solid #DC000C; }
+  .sti-dropdw .dropdown .dropdown-menu li {
+    padding: 20px 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    font-size: 16px; }
+  .sti-dropdw .dropdown .dropdown-menu {
+    padding: 0;
+    list-style: none; }
+  .sti-dropdw .dropdown .dropdown-menu li:hover {
+    background-color: #DC000C;
+    color: #fff; }
+  .sti-dropdw .dropdown .dropdown-menu li:active {
+    background-color: #e2e2e2; }
+
+.sticker-content h5 {
+  color: #DC000C;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 55px; }
 
 .sticker-content .login-if a {
   color: #DC000C;
@@ -3880,28 +3933,18 @@ a {
   .sticker-content h5 {
     font-size: 5.0vw; }
 
-  .sti-sl-op {
-    display: block; }
-
-  .sti-sl-op select {
-    width: 100%; }
-
-  .sti-sl-op .sl-op {
-    margin-bottom: 20px; }
-
-  .sti-sl-op button {
-    height: 60px;
-    font-size: 16px;
-    margin: auto; }
-
-  .sti-sl-op .sl-op:before {
-    right: 20px; }
-
   .list-news .sticker-box .row {
     margin: 0 -10px; }
 
   .list-news .sticker-box .row > .col-md-4 {
     padding: 0 5px; } }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sti-dropdw .dropdown {
+    width: 47%;
+    margin-bottom: 20px; }
+
+  .sti-dropdw {
+    flex-wrap: wrap; } }
 /*slider*/
 .sticker-detail {
   margin-bottom: 100px; }
@@ -3956,6 +3999,16 @@ a {
   margin-bottom: 50px; }
 
 @media (max-width: 767px) {
+  .sti-dropdw button {
+    margin: auto; }
+
+  .sti-dropdw .dropdown {
+    width: 100%;
+    margin-bottom: 20px; }
+
+  .sti-dropdw {
+    display: block; }
+
   .sticker-detail {
     margin-bottom: 80px; }
     .sticker-detail .list-views {
@@ -4446,6 +4499,13 @@ a {
 @media (min-width: 1024px) and (max-width: 1366px) {
   .login-box > .item {
     max-width: 470px; } }
+.sp {
+  display: none; }
+
+.mypage {
+  position: relative;
+  z-index: 1; }
+
 .mypage .box {
   display: flex;
   justify-content: space-between;
@@ -4461,7 +4521,8 @@ a {
 .mypage article > .info-box > .title {
   display: flex;
   align-items: center;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  z-index: 1; }
 
 .mypage article > .info-box > .title > .icon {
   margin-right: 16px;
@@ -4777,5 +4838,143 @@ a {
 
 .mypage .link-box ul {
   padding-left: 0; }
+
+@media (max-width: 768px) {
+  .sp {
+    display: block !important; }
+
+  .mypage .box {
+    max-width: 100%;
+    padding: 40px 0 15px;
+    display: block; }
+
+  /* article */
+  .mypage article {
+    max-width: 100%;
+    padding-top: 45px; }
+
+  .mypage article > .info-box {
+    margin-bottom: 45px; }
+
+  .mypage article > .info-box > .title {
+    padding: 0 6%; }
+
+  .mypage article > .info-box > .title > .icon.push:before {
+    top: -4px;
+    right: -3px;
+    width: 10px;
+    height: 10px; }
+
+  .mypage article > .info-box > .title > .text {
+    font-size: 16px; }
+
+  .mypage article > .info-box > .info-sub-box {
+    margin-bottom: 16px; }
+
+  .mypage article > .info-box > .info-sub-box > .tit {
+    font-size: 13px;
+    margin-bottom: 16px;
+    padding: 0 6%; }
+
+  .mypage article > .info-box > .info-sub-box > .list-box > a.list {
+    display: block; }
+
+  .mypage article > .info-box > .info-sub-box > .list-box > a.list > .text {
+    font-size: 13px; }
+
+  .mypage article > .info-box > .info-sub-box > .list-box > a.list > .time {
+    margin: 10px auto 0;
+    justify-content: flex-start; }
+
+  /* aside */
+  .mypage aside {
+    max-width: 100%; }
+
+  .mypage aside .account-top-box {
+    margin-bottom: 28px;
+    padding: 0 6%; }
+
+  .mypage aside .account-top-box > .name-box {
+    margin-bottom: 24px;
+    border-bottom: none;
+    padding-bottom: 0; }
+
+  .mypage aside .account-top-box > .name-box > .name {
+    font-size: 18px;
+    margin-bottom: 7px; }
+
+  .mypage aside .account-top-box > .name-box > .number {
+    font-size: 10px;
+    line-height: 1.4; }
+
+  .mypage aside .account-top-box > .link-text {
+    margin-bottom: 7px; }
+
+  .mypage aside .account-top-box > .link-text > a {
+    font-size: 13px;
+    line-height: 1.6; }
+
+  .mypage aside .toggle-box {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    padding: 16px 10px 15px;
+    background: #DC000C;
+    position: relative;
+    text-align: center; }
+
+  .mypage aside .toggle-box:after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    margin-top: -3px;
+    transition: all .3s;
+    background-image: url(../img/icon_arrow_sp.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: left top; }
+
+  .toggle-show .mypage aside .toggle-box:after {
+    transform: rotate(180deg); }
+
+  .mypage aside .search-box {
+    width: 100%;
+    border-radius: 0 0 0 0;
+    display: none;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+    padding-bottom: 30px; }
+
+  .mypage aside .search-box > .detail {
+    padding: 0; }
+
+  .mypage aside .search-box > .detail > .link-box {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0; }
+
+  .mypage aside .search-box > .detail > .link-box > .big-link {
+    padding: 20px 6%;
+    font-size: 13px;
+    border-bottom: 1px solid #EBEBEB; }
+
+  .mypage aside .search-box > .detail > .link-box > .tit {
+    background-color: #EBEBEB;
+    margin-bottom: 0;
+    padding: 20px 6%;
+    font-size: 13px; }
+
+  .mypage aside .search-box > .detail > .link-box > .sm-link > li {
+    margin: 0;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 20px 6%; }
+
+  .foottop01 a {
+    padding: 0 80px; } }
 
 /*# sourceMappingURL=style.css.map */

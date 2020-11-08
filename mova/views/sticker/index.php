@@ -16,31 +16,41 @@
 				</ul>
 				<div class="sticker-content">
 					<h5>気になるステッカーにエントリーしよう!</h5>
-					<div class="sti-sl-op">
-						<div class="sl-op">
-							<select id="options">
-						        <option value="">都道府県で絞り込む</option>
-						        <option value="">01</option>
-						        <option value="">02</option>
-						        <option value="">03</option>
-						    </select>
+					<div class="sti-dropdw">
+						<div class="dropdown">
+						    <div class="select" >
+						        <span id="rs-id-01">都道府県で絞り込む</span>
+						    </div>
+						    <input type="hidden" name="">
+						    <ul class="dropdown-menu">
+						        <li>01</li>
+						        <li>02</li>
+						    </ul>
 						</div>
-					   <div class="sl-op">
-						   	<select id="choices-01">
-						      	<option value="">業種で絞り込む</option>
-						      	<option value="">01</option>
-						      	<option value="">02</option>
-						      	<option value="">03</option>
-						    </select>
-					   </div>
-					    <div class="sl-op">
-					    	<select id="choices-02">
-						      	<option value="">ご利用プランで絞り込む</option>
-						      	<option value="">ボディ</option>
-						      	<option value="">リア</option>
-						    </select>
-					    </div>
-					    <button id="reset">リセット</button>
+						<div class="dropdown">
+						    <div class="select">
+						        <span id="rs-id-02">業種で絞り込む</span>
+						    </div>
+						    <input type="hidden" name="">
+						    <ul class="dropdown-menu">
+						        <li>01</li>
+						        <li>02</li>
+						        <li>02</li>
+						        <li>02</li>
+						        <li>02</li>
+						    </ul>
+						</div>
+						<div class="dropdown">
+						    <div class="select">
+						        <span id="rs-id-03">ご利用プランで絞り込む</span>
+						    </div>
+						    <input type="hidden" name="">
+						    <ul class="dropdown-menu">
+						        <li>ボディ</li>
+						        <li>リア</li>
+						    </ul>
+						</div>
+						<button id="reset">リセット</button>
 					</div>
 					<div class="login-if">
 						<ul class="style-disc">

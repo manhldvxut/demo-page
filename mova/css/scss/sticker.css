@@ -1,24 +1,35 @@
 /*
 Error: Undefined variable: "$red".
-        on line 159 of C:\xampp\htdocs\demo_MoVa\css\scss\mypage.scss
+        on line 99 of C:\xampp\htdocs\demo_MoVa\css\scss\sticker.scss
 
-154: 	padding-bottom: 0;
-155: }
-156: .mypage aside .search-box > .detail > .link-box > .big-link > a {
-157: 	font-size: 15px;
-158: 	font-weight: bold;
-159: 	color: $red;
-160: 	line-height: 1.6;
-161: 	transition: all .3s;
-162: }
-163: .mypage aside .search-box > .detail > .link-box > .big-link > a:hover {
-164: 	opacity: .7;
+94: 	    overflow: hidden;
+95: 	    display: none;
+96: 	    max-height: 144px;
+97: 	    overflow-y: auto;
+98: 	    z-index: 9;
+99: 	    color: $red;
+100: 	    border:1px solid $red;
+101: 	}
+102: 	.dropdown .dropdown-menu li {
+103: 	    padding: 20px 10px;
+104: 	    transition: all .2s ease-in-out;
 
 Backtrace:
-C:\xampp\htdocs\demo_MoVa\css\scss\mypage.scss:159
+C:\xampp\htdocs\demo_MoVa\css\scss\sticker.scss:99
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -62,4 +73,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$red\".\A         on line 159 of C:\xampp\htdocs\demo_MoVa\css\scss\mypage.scss\A \A 154: 	padding-bottom: 0;\A 155: }\A 156: .mypage aside .search-box > .detail > .link-box > .big-link > a {\A 157: 	font-size: 15px;\A 158: 	font-weight: bold;\A 159: 	color: $red;\A 160: 	line-height: 1.6;\A 161: 	transition: all .3s;\A 162: }\A 163: .mypage aside .search-box > .detail > .link-box > .big-link > a:hover {\A 164: 	opacity: .7;"; }
+  content: "Error: Undefined variable: \"$red\".\A         on line 99 of C:\xampp\htdocs\demo_MoVa\css\scss\sticker.scss\A \A 94: 	    overflow: hidden;\A 95: 	    display: none;\A 96: 	    max-height: 144px;\A 97: 	    overflow-y: auto;\A 98: 	    z-index: 9;\A 99: 	    color: $red;\A 100: 	    border:1px solid $red;\A 101: 	}\A 102: 	.dropdown .dropdown-menu li {\A 103: 	    padding: 20px 10px;\A 104: 	    transition: all .2s ease-in-out;"; }

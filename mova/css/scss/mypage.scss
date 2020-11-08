@@ -1,4 +1,10 @@
-
+.sp{
+	display: none;
+}
+.mypage{
+	position:relative;
+	z-index: 1;
+}
 .mypage .box {
 	display: flex;
 	justify-content: space-between;
@@ -15,6 +21,7 @@
 	display: flex;
 	align-items: center;
 	margin-bottom: 16px;
+	z-index: 1;
 }
 .mypage article > .info-box > .title > .icon {
 	margin-right: 16px;
@@ -336,5 +343,145 @@
 		ul{
 			padding-left:0;
 		}
+	}
+}
+@media(max-width: 768px){
+	.sp{
+		display: block !important;
+	}
+	.mypage .box {
+		max-width: 100%;
+		padding: 40px 0 15px;
+		display: block;
+	}
+	/* article */
+	.mypage article {
+		max-width: 100%;
+		padding-top: 45px;
+	}
+	.mypage article > .info-box {
+		margin-bottom: 45px;
+	}
+	.mypage article > .info-box > .title {
+		padding: 0 6%;
+	}
+	.mypage article > .info-box > .title > .icon.push:before {
+		top: -4px;
+		right: -3px;
+		width: 10px;
+		height: 10px;
+	}
+	.mypage article > .info-box > .title > .text {
+		font-size: 16px;
+	}
+	.mypage article > .info-box > .info-sub-box {
+		margin-bottom: 16px;
+	}
+	.mypage article > .info-box > .info-sub-box > .tit {
+		font-size: 13px;
+		margin-bottom: 16px;
+		padding: 0 6%;
+	}
+	.mypage article > .info-box > .info-sub-box > .list-box > a.list {
+		display: block;
+	}
+	.mypage article > .info-box > .info-sub-box > .list-box > a.list > .text {
+		font-size: 13px;
+	}
+	.mypage article > .info-box > .info-sub-box > .list-box > a.list > .time {
+		margin: 10px auto 0;
+		justify-content: flex-start;
+	}
+
+	/* aside */
+	.mypage aside {
+		max-width: 100%;
+	}
+	.mypage aside .account-top-box {
+		margin-bottom: 28px;
+		padding: 0 6%;
+	}
+	.mypage aside .account-top-box > .name-box {
+		margin-bottom: 24px;
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+	.mypage aside .account-top-box > .name-box > .name {
+		font-size: 18px;
+		margin-bottom: 7px;
+	}
+	.mypage aside .account-top-box > .name-box > .number {
+		font-size: 10px;
+		line-height: 1.4;
+	}
+	.mypage aside .account-top-box > .link-text {
+		margin-bottom: 7px;
+	}
+	.mypage aside .account-top-box > .link-text > a {
+		font-size: 13px;
+		line-height: 1.6;
+	}
+	.mypage aside .toggle-box {
+		font-size: 12px;
+		font-weight: bold;
+		color: #fff;
+		padding: 16px 10px 15px;
+		background: $red;
+		position: relative;
+		text-align: center;
+	}
+	.mypage aside .toggle-box:after {
+		content: '';
+		display: block;
+		width: 10px;
+		height: 6px;
+		position: absolute;
+		top: 50%;
+		right: 14px;
+		margin-top: -3px;
+		transition: all .3s;
+		background-image: url(../img/icon_arrow_sp.png);
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: left top;
+	}
+	.toggle-show .mypage aside .toggle-box:after {
+		transform: rotate(180deg);
+	}
+	.mypage aside .search-box {
+		width: 100%;
+		border-radius: 0 0 0 0;
+		display: none;
+		left: 0;
+		position: absolute;
+		z-index: 100;
+		padding-bottom: 30px;
+	}
+	.mypage aside .search-box > .detail {
+		padding: 0;
+	}
+	.mypage aside .search-box > .detail > .link-box {
+		margin-bottom: 0;
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+	.mypage aside .search-box > .detail > .link-box > .big-link {
+		padding: 20px 6%;
+		font-size: 13px;
+		border-bottom: 1px solid #EBEBEB;
+	}
+	.mypage aside .search-box > .detail > .link-box > .tit {
+		background-color: #EBEBEB;
+		margin-bottom: 0;
+		padding: 20px 6%;
+		font-size: 13px;
+	}
+	.mypage aside .search-box > .detail > .link-box > .sm-link > li {
+		margin: 0;
+		border-bottom: 1px solid #EBEBEB;
+		padding: 20px 6%;
+	}
+	.foottop01 a {
+		padding: 0 80px;
 	}
 }
