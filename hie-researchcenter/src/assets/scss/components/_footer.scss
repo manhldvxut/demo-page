@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/* -------------------
+  FOOTER
+--------------------*/
+.footer {
+  padding: 80px 0;
+  background-color: #F9FBFC;
+  text-align: center;
+  @include mq() {
+    padding: 60px 0;
+  }
+  &-logo {
+    width: 19.07%;
+    margin: 0 auto 60px;
+    @include mq() {
+      width: 232px;
+      max-width: 63%;
+      margin: 0 auto 50px;
+    }
+  }
+  &-message {
+    margin-bottom: 10px;
+    font-size: fs(14);
+    line-height: fs(25);
+    font-weight: bold;
+    @include mq() {
+      font-size: fs(12);
+      line-height: fs(19);
+    }
+  }
+  &-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    @include mq() {
+      display: block;
+      margin-bottom: 50px;
+    }
+    &--infor {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      @include mq() {
+        margin-right: 0;
+        margin-bottom: 24px;
+        justify-content: center;
+      }
+      &-label {
+        padding-right: 15px;
+        font-size: fs(14);
+        line-height: fs(25);
+        font-weight: 500;
+        font-family: 'EB Garamond', serif;
+      }
+      &-value {
+        padding-left: 15px;
+        border-left: solid 1px #70969F;
+        @include mq() {
+          padding-left: 20px;
+        }
+      }
+      &-phone {
+        font-size: fs(35);
+        line-height: fs(40);
+        font-weight: 500;
+        font-family: 'EB Garamond', serif;
+      }
+      &-time {
+        font-size: fs(12);
+        line-height: fs(19);
+        font-weight: 500;
+      }
+    }
+    .btn_contact {
+      @include mq() {
+        width: 335px;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &-copy {
+    font-size: fs(12);
+    line-height: fs(20);
+    font-weight: 500;
+    color: #BFBFBF;
+    @include mq() {
+      font-size: fs(11);
+    }
+  }
+}
