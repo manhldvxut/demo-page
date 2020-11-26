@@ -65,7 +65,7 @@
 						<div class="row">
 							<div class="col-md-4 col-6">
 								<div class="recruit-list wow fadeIn">
-									<a href=""><img src="<?php echo DOMAIN; ?>/images/top/ads-1.png" alt="">
+									<a href=""><img src="<?php echo DOMAIN; ?>/images/sticker/st06.png" alt="">
 										<h3 class="recruit-tit">
 											<img src="<?php echo DOMAIN; ?>/images/top/yaru.svg">
 											会社名
@@ -76,7 +76,7 @@
 							</div>
 							<div class="col-md-4 col-6">
 								<div class="recruit-list wow fadeIn">
-									<a href=""><img src="<?php echo DOMAIN; ?>/images/top/ads-2.png" alt="">
+									<a href=""><img src="<?php echo DOMAIN; ?>/images/sticker/st01.png" alt="">
 										<h3 class="recruit-tit">
 											<img src="<?php echo DOMAIN; ?>/images/top/yaru.svg">
 											名古屋市医師会
@@ -86,7 +86,7 @@
 							</div>
 							<div class="col-md-4 col-6">
 								<div class="recruit-list wow fadeIn">
-									<a href=""><img src="<?php echo DOMAIN; ?>/images/top/ads-3.png" alt="">
+									<a href=""><img src="<?php echo DOMAIN; ?>/images/sticker/st02.png" alt="">
 										<h3 class="recruit-tit">
 											<img src="<?php echo DOMAIN; ?>/images/top/yaru.svg">
 											キャリアトレック
@@ -96,7 +96,7 @@
 							</div>
 							<div class="col-md-4 col-6">
 								<div class="recruit-list wow fadeIn">
-									<a href=""><img src="<?php echo DOMAIN; ?>/images/top/ads-4.png" alt="">
+									<a href=""><img src="<?php echo DOMAIN; ?>/images/sticker/st03.png" alt="">
 										<h3 class="recruit-tit">
 											<img src="<?php echo DOMAIN; ?>/images/top/yaru.svg">
 											企業名
@@ -106,7 +106,7 @@
 							</div>
 							<div class="col-md-4 col-6">
 								<div class="recruit-list wow fadeIn">
-									<a href=""><img src="<?php echo DOMAIN; ?>/images/top/ads-8.png" alt="">
+									<a href=""><img src="<?php echo DOMAIN; ?>/images/sticker/st04.png" alt="">
 										<h3 class="recruit-tit">
 											<img src="<?php echo DOMAIN; ?>/images/top/yaru.svg">
 											横浜市観光情報
@@ -116,7 +116,7 @@
 							</div>
 							<div class="col-md-4 col-6">
 								<div class="recruit-list wow fadeIn">
-									<a href=""><img src="<?php echo DOMAIN; ?>/images/top/ads-6.png" alt="">
+									<a href=""><img src="<?php echo DOMAIN; ?>/images/sticker/st05.png" alt="">
 										<h3 class="recruit-tit">
 											<img src="<?php echo DOMAIN; ?>/images/top/yaru.svg">
 											広告タイトルが長い場合はこのように２行で表示します
@@ -126,7 +126,28 @@
 							</div>
 							<div class="col-md-4 col-6">
 								<div class="recruit-list wow fadeIn">
-									<a href=""><img src="<?php echo DOMAIN; ?>/images/top/ads-6.png" alt="">
+									<a href=""><img src="<?php echo DOMAIN; ?>/images/sticker/st06.png" alt="">
+										<h3 class="recruit-tit">
+											<img src="<?php echo DOMAIN; ?>/images/top/yaru.svg">
+											会社名
+										</h3>
+									</a>
+									
+								</div>
+							</div>
+							<div class="col-md-4 col-6">
+								<div class="recruit-list wow fadeIn">
+									<a href=""><img src="<?php echo DOMAIN; ?>/images/sticker/st01.png" alt="">
+										<h3 class="recruit-tit">
+											<img src="<?php echo DOMAIN; ?>/images/top/yaru.svg">
+											名古屋市医師会
+										</h3>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4 col-6">
+								<div class="recruit-list wow fadeIn">
+									<a href=""><img src="<?php echo DOMAIN; ?>/images/sticker/st02.png" alt="">
 										<h3 class="recruit-tit">
 											<img src="<?php echo DOMAIN; ?>/images/top/yaru.svg">
 											キャリアトレック
@@ -136,54 +157,35 @@
 							</div>
 							<div class="col-md-4 col-6">
 								<div class="recruit-list wow fadeIn">
-									<a href=""><img src="<?php echo DOMAIN; ?>/images/top/ads-8.png" alt="">
+									<a href=""><img src="<?php echo DOMAIN; ?>/images/sticker/st03.png" alt="">
 										<h3 class="recruit-tit">
-										<img src="<?php echo DOMAIN; ?>/images/top/yaru.svg">
-											ciatre
+											<img src="<?php echo DOMAIN; ?>/images/top/yaru.svg">
+											企業名
 										</h3>
 									</a>
 								</div>
 							</div>
 							<div class="col-md-4 col-6">
 								<div class="recruit-list wow fadeIn">
-									<a href=""><img src="<?php echo DOMAIN; ?>/images/top/ads-8.png" alt="">
+									<a href=""><img src="<?php echo DOMAIN; ?>/images/sticker/st04.png" alt="">
 										<h3 class="recruit-tit">
-										<img src="<?php echo DOMAIN; ?>/images/top/yaru.svg">
-											ciatre
+											<img src="<?php echo DOMAIN; ?>/images/top/yaru.svg">
+											横浜市観光情報
 										</h3>
 									</a>
 								</div>
 							</div>
 							<div class="col-md-4 col-6">
 								<div class="recruit-list wow fadeIn">
-									<a href=""><img src="<?php echo DOMAIN; ?>/images/top/ads-8.png" alt="">
+									<a href=""><img src="<?php echo DOMAIN; ?>/images/sticker/st05.png" alt="">
 										<h3 class="recruit-tit">
-										<img src="<?php echo DOMAIN; ?>/images/top/yaru.svg">
-											ciatre
+											<img src="<?php echo DOMAIN; ?>/images/top/yaru.svg">
+											広告タイトルが長い場合はこのように２行で表示します
 										</h3>
 									</a>
 								</div>
 							</div>
-							<div class="col-md-4 col-6">
-								<div class="recruit-list wow fadeIn">
-									<a href=""><img src="<?php echo DOMAIN; ?>/images/top/ads-8.png" alt="">
-										<h3 class="recruit-tit">
-										<img src="<?php echo DOMAIN; ?>/images/top/yaru.svg">
-											ciatre
-										</h3>
-									</a>
-								</div>
-							</div>
-							<div class="col-md-4 col-6">
-								<div class="recruit-list wow fadeIn">
-									<a href=""><img src="<?php echo DOMAIN; ?>/images/top/ads-8.png" alt="">
-										<h3 class="recruit-tit">
-										<img src="<?php echo DOMAIN; ?>/images/top/yaru.svg">
-											ciatre
-										</h3>
-									</a>
-								</div>
-							</div>
+
 						</div>
 					</div>
 				</div>

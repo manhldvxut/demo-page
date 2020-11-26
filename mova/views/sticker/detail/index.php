@@ -47,7 +47,7 @@
 						    </div>
 						    <div class="login-if">
 								<ul class="style-disc">
-									<li><span>エントリーには、<a href="">ログイン</a>が必要です。</span></li>
+									<li><span>エントリーには、<a href="<?php echo DOMAIN; ?>/login/">ログイン</a>が必要です。</span></li>
 									<li><span>エントリー後、提携の可否については状況により一定のお時間をいただいております。</span></li>
 									<li><span>エントリーいただいても、採用されない場合がございます。予め、ご了承ください。</span></li>
 									<li><span>車体にステッカー広告を掲載時には、広告の下に同封する特定番号ステッカーを貼付する必要があります。</span></li>
@@ -59,7 +59,23 @@
 								<p class="news-red">new</p>
 								<h2>○○○○○○○（企業名・サービス名が入ります）</h2>
 								<p>本文通常です。この文章はダミーコピーですお読みにならないで下さい。構成を分かりやすくするため使用しています。本文通常です。この文章はダミーコピーですお読みにならないで下さい。構成を分かりやすくするため使用しています。</p>
-								<a href="" class="btn-gradien"> このステッカーにエントリーする</a>
+								<a href="" class="btn-gradien" data-toggle="modal" data-target="#modan-sticker"> このステッカーにエントリーする</a>
+
+								<!-- start-modan -->
+								<div class="modal fade" id="modan-sticker" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+								  <div class="modal-dialog modal-dialog-centered" role="document">
+								    <div class="modal-content">
+								      <div class="modal-body">
+								      	<div class="avatar"><img src="<?php echo DOMAIN; ?>/images/sticker/images.jpg"></div>
+								        <p>この広告にエントリーを行いますか？</p>
+								      </div>
+								      <div class="modal-footer">
+								      	<a href="<?php echo DOMAIN; ?>/singin/" class="btn-red"> エントリーする</a>
+								      	<a data-dismiss="modal" href="<?php echo DOMAIN; ?>/singin/" class="btn-red"> キャンセル</a>
+								      </div>
+								    </div>
+								  </div>
+								</div>
 								<table class="company-table table table-bordered">
 								    <tbody class="tab-cont">
 								        <tr>

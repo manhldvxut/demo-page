@@ -305,6 +305,7 @@ $Dr:'DNI2014-Regular';
 .service{
 	z-index: 1;
 	position: relative;
+	text-align: center;
 	h5{
 		margin-bottom: 22px;
 	}
@@ -324,7 +325,7 @@ $Dr:'DNI2014-Regular';
 
 }
 .two-line{
-	display:block;
+	display:inline-block;
 	text-align: center;
 	color: $red;
 	font-size: 14px;
@@ -359,6 +360,7 @@ $Dr:'DNI2014-Regular';
 	z-index: 1;
 	img{
 		max-width: 170px;
+		min-height: 179px;
 		margin-bottom: 40px;
 		margin-top: -85px;
 
@@ -597,9 +599,9 @@ $Dr:'DNI2014-Regular';
 	color: $red;
 	border:1px solid $red;
 	font-size: 12px;
-	padding: 4px 10px 2px 10px;
-	line-height: 1;
+	padding: 6px 10px 1px 10px;
 	font-family: $Yr;
+	line-height: 13px;
 }
 
 @media (max-width: 965px){
@@ -683,6 +685,7 @@ $Dr:'DNI2014-Regular';
 	    max-width: 90px;
 	    left: 20px;
 	    top: 100px;
+	    min-height: inherit;
 	}
 	.ser-list .desc{
 		font-size: 13px;

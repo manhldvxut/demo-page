@@ -58,7 +58,7 @@
     .list-news .row > .col-md-8 > ul > li {
       padding: 0 15px; }
     .list-news .row > .col-md-8 > ul .news-info {
-      border: initial;
+      border: none;
       padding-top: 0;
       margin-top: 15px; }
       .list-news .row > .col-md-8 > ul .news-info > ul {
@@ -164,7 +164,8 @@
     padding-left: 55px;
     margin-top: -10px;
     display: block;
-    transition: 0.4s all !important; }
+    transition: 0.4s all !important;
+    line-height: 14px; }
     .list-option a:hover {
       transition: 0.4s all; }
       .list-option a:hover:before {

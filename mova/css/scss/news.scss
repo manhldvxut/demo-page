@@ -76,7 +76,7 @@ $Db:'DIN2014';
 					padding: 0 15px;
 				}
 				.news-info{
-					border: initial;
+					border: none;
 					padding-top: 0;
 					margin-top: 15px;
 					>ul{
@@ -214,6 +214,7 @@ $Db:'DIN2014';
 		margin-top: -10px;
 		display: block;
 		transition: 0.4s all !important;
+		line-height: 14px;
 		&:hover{
 			transition: 0.4s all;
 			&:before{

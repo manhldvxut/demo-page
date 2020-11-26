@@ -148,7 +148,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> <!-- end faq -->
                 <a href="/" class="btn-red">トップページ</a>
 			</div>
             <section class="bg-company-footer">

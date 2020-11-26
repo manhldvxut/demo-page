@@ -20,23 +20,23 @@
 						通勤やドライブすることで副収入を得られる広告サービスです。 <br>
 						一定の走行距離の利用で、日々のガソリン代をカバーすることができます。 <br>
 						さっそく、モーバでお得なカーライフをはじめてみませんか？</p>
-					<p class="two-line">走れば走るほど収入が増える！</p>
+					<p class="two-line">こんな方におすすめ！</p>
 					<div class="box-mova-ten">
 						<div class="row">
 							<div class="col-md-4">
-								<div class="avatar"><img src="<?php echo DOMAIN; ?>/images/patern/dammy.png"></div>
+								<div class="avatar"><img src="<?php echo DOMAIN; ?>/images/service/car01.png"></div>
 								<div class="arrow-red-top">
 									<p>週末は家族でお出かけ！ ドライブが好きな方</p>
 								</div>
 							</div>
 							<div class="col-md-4">
-								<div class="avatar"><img src="<?php echo DOMAIN; ?>/images/patern/dammy.png"></div>
+								<div class="avatar"><img src="<?php echo DOMAIN; ?>/images/service/car02.png"></div>
 								<div class="arrow-red-top">
 									<p>通勤や送迎、仕事などで 毎日クルマの運転をする方</p>
 								</div>
 							</div>
 							<div class="col-md-4">
-								<div class="avatar"><img src="<?php echo DOMAIN; ?>/images/patern/dammy.png"></div>
+								<div class="avatar"><img src="<?php echo DOMAIN; ?>/images/service/car03.png"></div>
 								<div class="arrow-red-top">
 									<p>配送業などクルマを使う 仕事に従事する個人事業者</p>
 								</div>
@@ -45,11 +45,11 @@
 					</div>
 					<div class="model-mova">
 						<h2 class="line-top">モデルケース</h2>
-						<div class="row">
-							<div class="col-md-2">
+						<div class="ser-row">
+							<div class="ser-col-2">
 								<div class="avatar"><img src="<?php echo DOMAIN; ?>/images/service/banner.png"></div>
 							</div>
-							<div class="col-md-10">
+							<div class="ser-col-10">
 								<p>燃費13km/lのクルマを所有するAさん</p>
 								<div class="list-option-by d-flex">
 									<div class="d-flex">
@@ -72,61 +72,67 @@
 										<p class="tit">受け取り金額</p>
 										<div class="d-flex">
 											<span>毎月の走行距離</span>
-											<p>600km</p>
+											<p class="fnt-24-dn">600km</p>
+											<img src="<?php echo DOMAIN; ?>/images/service/nhan.svg">
 											<span>走行による報酬</span>
-											<p>10 <span>円</span></p>
+											<p class="fnt-24-dn">10 <span>円</span></p>
 										</div>
-										<p class="price">6,000円</p>
+										<p class="price">6,000 <span>円</span></p>
 										<small>※振込時はサイト利用料として報酬の10％が差し引かれます。</small>
 									</div>
-								</div>
+								</div> <!-- end box 1 -->
 								<div class="col-md-6 black">
 									<div class="info">
 										<p class="tit">毎月かかるガソリン代</p>
-										<small>※振込時はサイト利用料として報酬の10％が差し引かれます。</small>
-
-										<div class="d-flex">
+										<small>ガソリン代 1L約130円で燃費13km/lの場合</small>
+										<div class="d-flex shita-black">
 											<span>毎月の給油量</span>
-											<p>46L</p>
+											<p class="fnt-24-dn">46L</p>
+											<img src="<?php echo DOMAIN; ?>/images/service/nhan.svg">
 											<span>ガソリン代</span>
-											<p>130<span>円/L</span></p>
+											<p class="fnt-24-dn">130<span>円/L</span></p>
 										</div>
-										<p class="price">5,980円</p>
+										<p class="price">5,980<span>円</span></p>
 										
 									</div>
-								</div>
+								</div> <!-- end box 2 -->
 							</div>
 							<div class="box-up-red">
 								<p>毎月のガソリン代が <span>実質無料！</span></p>
-
 							</div>
 						</div>
 					</div>
 					<div class="user-plan">
 						<h2 class="line-top">ご利用プラン</h2>
-						<p>ご利用プランは、ステッカーの掲載位置により3パターン。指定位置にステッカーを貼って、走行するだけで収入を得ることができます。詳しくはご利用ガイドをご確認ください。</p>
-						<div class="btn-right">
-							<a href="" class="btn-cic"> 回遊ボタン <span><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
-                                    <defs>
-                                        <style>
-                                            .a {
-                                                fill: #dc000c;
-                                            }
+						<div class="row">
+							<div class="col-md-9">
+								<p>ご利用プランは、ステッカーの掲載位置により3パターン。指定位置にステッカーを貼って、走行するだけで収入を得ることができます。詳しくはご利用ガイドをご確認ください。</p>
+							</div>
+							<div class="col-md-3">
+								<div class="btn-right">
+									<a href="<?php echo DOMAIN; ?>/guide/" class="btn-cic"> ご利用ガイド <span><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+		                                    <defs>
+		                                        <style>
+		                                            .a {
+		                                                fill: #dc000c;
+		                                            }
 
-                                            .b {
-                                                fill: #fff;
-                                            }
-                                        </style>
-                                    </defs>
-                                    <g transform="translate(-386 -297)">
-                                        <circle class="a" cx="9.5" cy="9.5" r="9.5" transform="translate(386 297)"></circle>
-                                        <path class="b" d="M932.82,244.681c1.294.689,1.294,1.817,0,2.506l-3.467,1.847c-1.294.689-2.353.134-2.353-1.234v-3.73c0-1.368,1.059-1.923,2.353-1.234Z" transform="translate(-534.395 60.204)"></path>
-                                    </g>
-                                </svg></span></a>
+		                                            .b {
+		                                                fill: #fff;
+		                                            }
+		                                        </style>
+		                                    </defs>
+		                                    <g transform="translate(-386 -297)">
+		                                        <circle class="a" cx="9.5" cy="9.5" r="9.5" transform="translate(386 297)"></circle>
+		                                        <path class="b" d="M932.82,244.681c1.294.689,1.294,1.817,0,2.506l-3.467,1.847c-1.294.689-2.353.134-2.353-1.234v-3.73c0-1.368,1.059-1.923,2.353-1.234Z" transform="translate(-534.395 60.204)"></path>
+		                                    </g>
+		                                </svg></span></a>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="login-if">
-						<h2 class="line-top">ご登録条件</h2>
+					<div class="login-if fix-small">
+						<h2 class="line-top">広告報酬について</h2>
 						<ul class="style-disc">
 							<li><span>広告報酬は、走行距離ベース（1km ✕ 10円）で換算。1ヶ月ごとにメーターを確認します。</span></li>
 							<li><span>最小契約期間は６か月です。</span></li>
@@ -174,7 +180,7 @@
 						<div class="row w-m-3">
 							<div class="col-md-4 w-p-3">
 								<div class="ser-list wow fadeIn">
-									<img class="wow bounceIn" data-wow-delay="0.2s" src="http://localhost/demo_MoVa/images/top/ser-01.svg" alt="">
+									<img class="wow bounceIn" data-wow-delay="0.2s" src="<?php echo DOMAIN; ?>/images/top/ser-01.svg" alt="">
 									<div class="ser-inf wow fadeIn" data-wow-delay="0.5s">
 										<h4>スマホで簡単手続き、<br>いつでもはじめられます。</h4>
 										<div class="desc" >クルマを所有していて、節度のある運転を心掛けられる方なら、どなたでもサービス開始出来ます。ステッカーを貼るだけで、毎月のクルマの維持費が安く収まります。</div>
@@ -200,7 +206,7 @@
 							</div>
 							<div class="col-md-4 w-p-3">
 								<div class="ser-list wow fadeIn">
-									<img class="wow bounceIn" data-wow-delay="0.5s" src="http://localhost/demo_MoVa/images/top/ser-02.svg" alt="">
+									<img class="wow bounceIn" data-wow-delay="0.5s" src="<?php echo DOMAIN; ?>/images/top/ser-02.svg" alt="">
 									<div class="ser-inf wow fadeIn" data-wow-delay="0.8s" >
 										<h4>あなたが選んだ<br>ステッカーを貼れます。</h4>
 										<div class="desc">ステッカーによっては、ドライバー様の意向と異なるものがあるかもしれません。MOVAなら、自分が選んだものにエントリーできるシステムなので、安心です。</div>
@@ -226,7 +232,7 @@
 							</div>
 							<div class="col-md-4 w-p-3">
 								<div class="ser-list wow fadeIn">
-									<img class="wow bounceIn" data-wow-delay="0.8s" src="http://localhost/demo_MoVa/images/top/ser-03.svg" alt="">
+									<img class="wow bounceIn" data-wow-delay="0.8s" src="<?php echo DOMAIN; ?>/images/top/ser-03.svg" alt="">
 									<div class="ser-inf wow fadeIn" data-wow-delay="1s">
 										<h4>副業にならないので、<br>お勤めの方も安心</h4>
 										<div class="desc">株式配当などと同じ権利収入になるので、副業禁止の方でも安心して参加できます。また、お仕事でクルマを長時間運転している方にとって、経費削減に繋がります。</div>

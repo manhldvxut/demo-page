@@ -344,6 +344,21 @@ template {
   display: none;
 }
 
+
+/* IE to fix
+-- select option
+*/
+select::-ms-expand {
+    display: none !important;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
 html {
   font: 87.5%/1.6 "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
 }

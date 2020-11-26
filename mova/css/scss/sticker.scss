@@ -41,7 +41,7 @@
 	    &:before{
 	    	position: absolute;
 		    content: "";
-		    width: 7px;
+		    width: 8px;
 		    height: 8px;
 		    background: url(../images/sticker/right.svg) no-repeat center;
 		    right: 22px;
@@ -229,6 +229,14 @@
 	}
 }
 .sticker-detail-info{
+	.modal{
+		top: inherit;
+		bottom: inherit;
+		left: 50%;
+	    top: 50%;
+	    transform: translate(-50%, -50%);
+	    width: 100%;
+	}
 	.news-red{
 		text-transform: uppercase;
 		display: inline-block;
@@ -246,8 +254,50 @@
 	.btn-gradien{
 		margin-bottom: 50px;
 	}
+	.modal-dialog{
+		max-width: 780px;
+	}
+	.modal-content{
+		border:inherit;
+		background-color: #DC000C;
+		padding: 30px 20px;
+		.btn-red:hover{
+			border-color:#fff;
+		}
+	}
+	.modal-body{
+		.avatar{
+			max-width: 200px;
+			margin: auto;
+			img{
+				margin-bottom: 20px;
+			}
+		}
+		p{
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+			color: #fff;
+			margin-bottom: 0;
+		}
+	}
+	.modal-footer{
+		border-top: inherit;
+		a{
+			margin: 0;
+			margin-right: 15px;
+		}
+	}
 }
 @media(max-width: 767px){
+	.sticker-detail-info{
+		.modal-footer{
+			display: block;
+			a{
+				margin-bottom: 25px;
+			}
+		}
+	}
 	.sti-dropdw button{
 		margin: auto;
 	}
@@ -274,4 +324,10 @@
 			margin-bottom: 40px;
 		}
 	}
+}
+.sticker-box.recruit-top .recruit-tit {
+    align-items: center;
+}
+.sticker-box.recruit-top .recruit-tit img{
+	margin-bottom: 0;
 }
