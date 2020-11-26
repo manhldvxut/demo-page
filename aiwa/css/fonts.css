@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Overpass';
+  src: url("../fonts/Overpass-Bold.eot") format("embedded-opentype");
+  src: url("../fonts/Overpass-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'YuGothic-Bold';
+  src: url("../fonts/YuGothic-Bold.eot") format("embedded-opentype");
+  src: url("../fonts/YuGothic-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'YuGothic-Regular';
+  src: url("../fonts/YuGothic-Regular.eot") format("embedded-opentype");
+  src: url("../fonts/YuGothic-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'rockwell';
+  src: url("../fonts/rockwen-webfont.woff2") format("woff2"), url("../fonts/rockwen-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'TsukuAOldMin';
+  src: url("../fonts/icon-font.eot");
+  src: url("../fonts/icon-font.eot?#iefix") format("embedded-opentype"), url("../fonts/icon-font.woff2") format("woff2"), url("../fonts/icon-font.woff") format("woff"), url("../fonts/icon-font.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/*# sourceMappingURL=fonts.css.map */
