@@ -1,0 +1,36 @@
+@charset "UTF-8";
+// ===========================
+// base
+// ===========================
+@import "base/reset";
+@import "base/variables";
+@import "base/mixin";
+@import "base/common";
+
+// ===========================
+// animations
+// ===========================
+@import "animations/textcover";
+@import "animations/fadeinup";
+@import "animations/passingtext";
+@import "animations/fadeinright";
+
+// ===========================
+// components
+// ===========================
+@import "components/common";
+@import "components/header";
+@import "components/footer";
+
+// ===========================
+// libs
+// ===========================
+@import "libs/slick";
+@import "libs/remodal";
+@import "libs/remodal-default-theme";
+
+// ===========================
+// pages
+// ===========================
+@import "pages/top";
+@import "pages/policy";

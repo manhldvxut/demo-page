@@ -1,0 +1,85 @@
+/* animation */
+@-webkit-keyframes passing-bar {
+  0% {
+    left: 0;
+    right: auto;
+    width: 0;
+  }
+  50% {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+  51% {
+    left: auto;
+    right: 0;
+    width: 100%;
+  }
+  100% {
+    left: auto;
+    right: 0;
+    width: 0;
+  }
+}
+@keyframes passing-bar {
+  0% {
+    left: 0;
+    width: 0;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  51% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0;
+  }
+}
+@-webkit-keyframes passing-txt {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes passing-txt {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.passing-txt {
+  position: relative;
+  display: block;
+  opacity: 0;
+ -webkit-animation: passing-txt 1.5s ease 0s 1 normal forwards;
+  animation: passing-txt 1.5s ease 0s 1 normal forwards;
+  &:before {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    background: #40210F;
+    -webkit-animation: passing-bar 1.5s ease 0s 1 normal forwards;
+    animation: passing-bar 1.5s ease 0s 1 normal forwards;
+    content: "";
+  }
+}

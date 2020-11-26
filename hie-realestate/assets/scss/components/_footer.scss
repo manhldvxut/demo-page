@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/* -------------------
+  FOOTER
+--------------------*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+  @include mq() {
+    display: block;
+    padding: 40px 20px;
+  }
+  &-nav {
+    display: flex;
+    @include mq() {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    li {
+      margin-right: 30px;
+      @include mq() {
+        width: 48%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        font-size: fs(12);
+        line-height: fs(20);
+        color: #40210F;
+        transition: all .3s;
+        font-weight: 500;
+        &:hover {
+          color: #BFB391;
+        }
+      }
+    }
+  }
+  &-copy {
+    font-size: fs(12);
+    line-height: fs(20);
+    font-weight: 500;
+    color: #BFBFBF;
+    @include mq() {
+      font-size: fs(11);
+    }
+  }
+}
