@@ -1,0 +1,329 @@
+/*font-size*/
+$mont: 'Montserrat', sans-serif;
+.page-content{
+	overflow: hidden;
+	min-width: inherit;
+}
+.fnt-30{
+	font-size: 30px;
+	font-weight: bold;
+}
+.fnt-20{
+	font-size: 20px;
+}
+.fnt-18{
+	font-size: 18px;
+	font-weight: bold;
+}
+/*color*/
+.blue{
+	color: #074098;
+}
+
+.wrapper.page-content{
+	min-width: inherit;
+}
+.english{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+.nav-small {
+    margin: 0 -10px;
+    display: flex;
+    font-size: 12px;
+    line-height: 0;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    max-width: 90%;
+    li{
+    	color: #6B9FE8;
+		position: relative;
+		padding: 0 10px;
+		margin-bottom: 18px;
+		&:last-child{
+		    color: #074099;
+		    &:before{
+		      background:inherit;
+		    }
+		  }
+		&:before{
+		    position: absolute;
+		    content: '';
+		    width: 8px;
+		    height: 6px;
+		    background: url('../../assets/images/interview/nav-ar.svg') no-repeat right;
+		    right: 0;
+		    margin: auto;
+		    top: -1px;
+		    bottom: 0;
+		    right: -5px;
+		}
+    }
+}
+
+.page-content{
+	.banner {
+	    position: relative;
+	    overflow: hidden;
+	    img {
+	        max-width: 100%;
+	        object-fit: cover;
+	        height: 100vh;
+	    }
+	}
+	.triangle-abs {
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    top: 0;
+	    left: 0;
+	    &:before {
+            content: "";
+		    border-top: 130vh solid transparent;
+		    border-bottom: 0px solid transparent;
+		    border-left: 110vw solid #fff;
+		    position: absolute;
+		    top: -21vh;
+		    left: 0;
+		    z-index: 2;
+	    }
+	    &:after {
+	        content: "";
+		    border-top: 12vw solid transparent;
+		    border-bottom: 12vw solid transparent;
+		    border-right: 21vw solid #074099;
+		    position: absolute;
+		    bottom: 0;
+		    right: 0;
+		    z-index: 1;
+	    }
+	}
+	.main-inner-content-page{
+	    z-index: 11;
+	    margin-top: -80vh;
+	    position: relative;
+	    .section-title{
+    		font-size: 64px;
+    		padding-left: 7%;
+    		display: block;
+    		position: relative;
+    		margin-bottom: 100px;
+    		 span{
+    		 	padding-left: 7%;
+    		 	font-size: 13px;
+    		 	letter-spacing: 0;
+    		 }
+    	}
+	    .container{
+	    	width: 100%;
+	    	max-width: 1040px;
+	    	.col-3--item{
+	    		padding: 0 20px;
+	    		a{
+	    			text-align: left;
+	    			padding: 0;
+	    		}
+	    		.logan{
+	    			letter-spacing: 0.45px;
+	    			line-height: 1.6;
+	    			margin-bottom: 11px;
+	    		}
+	    		.name {
+	    			margin-bottom: 5px;
+	    		}
+	    		.name-info{
+	    			display: flex;
+	    			justify-content: space-between;
+	    			.english{
+	    				font-size: 8px;
+	    				color: #014099;
+	    			}
+	    			.year{
+	    				font-size: 13px;
+	    				color: #808080;
+	    			}
+	    		}
+	    	}
+	    	.col-3{
+	    		flex-wrap: wrap;
+	    		margin: 0 -20px;
+	    		.col-3--item{
+		    		width: auto;
+		    		flex: 0 0 33.333%;
+		    		margin-bottom: 80px;
+		    	}
+	    	}
+	    }
+	}
+	.avatar{
+		position: relative;
+		margin-bottom: 30px;
+		.work-info{
+			position: absolute;
+		    bottom: 0;
+		    left: 0;
+		    background: #fff;
+		    font-size: 10px;
+		    color: #014099;
+		    width: 96px;
+		    padding-top: 11px;
+		    padding-bottom: 2px;
+		    text-align: center;
+		}
+	}
+	.ques{
+		font-size: 40px;
+		color: #014099;
+		padding-right: 16px;
+		font-weight: bold;
+		font-family: $mont;
+		margin-bottom: 33px;
+		.ques-tit{
+			font-size: 21px;
+		}
+	}
+	.question-interview-list{
+		display: flex;
+		flex-wrap:wrap;
+		margin: 0 -20px;
+		.question-interview-box{
+			flex: 0 0 50%;
+			padding: 0 20px;
+			margin-bottom: 65px;
+		}
+	}
+	.question-interview-box-tit{
+		font-size: 24px;
+		font-weight: bold;
+		color: #098CC6;
+		margin-bottom: 20px;
+		display: block;
+	}
+}
+.interview-detail{
+	.avatar{
+		margin-bottom: 30px;
+	}
+	.themble{
+		margin-bottom: 88px;
+		.themble-tit{
+			font-size: 30px;
+			color: #074098;
+			font-weight: bold;
+			margin-bottom: 30px;
+		}
+		ul{
+			padding-left: 100px;
+			li{
+				position:relative;
+				&:after{
+					position:absolute;
+					content: '';
+					width: 14px;
+					height: 14px;
+					background:#2F5BAF;
+					border-radius: 50%;
+					left: -64px;
+					top: 25px;
+
+				}
+				&:before{
+					position:absolute;
+					content: '';
+					width: 2px;
+					height: 120%;
+					background:#92B8ED;
+					top: 25px;
+					left: -58px;
+				}
+				&:last-child{
+					&:before{
+						opacity: 0;
+					}
+				}
+			}
+			.themble-info{
+				background-color: #F2F8FF;
+				padding: 25px 60px 25px 40px;
+				margin-bottom: 20px;
+				position:relative;
+				&:before{
+					width: 0;
+				    height: 0;
+				    border-left: 10px solid transparent;
+				    border-right: 10px solid transparent;
+				    border-top: 12px solid #F2F8FF;
+				    position: absolute;
+				    content: '';
+				    left: -16px;
+				    top: 26px;
+				    margin: auto;
+				    transform: rotate(90deg);
+				}
+			}
+			
+			.themble-info-flex{
+				display: flex;
+				align-items: center;
+				margin-bottom: 17px;
+				.set-time{
+					padding-right: 25px;
+					color: #074098;
+					font-family: $mont;
+					font-weight: bold;
+					.time-zone{
+						font-size: 14px;
+					}
+					.time{
+						font-size: 23px;
+
+					}
+				}
+				.themble-info-flex-tit{
+					font-size: 22px;
+					font-weight: bold;
+				}
+			}
+			.desc{
+				font-size: 15px;
+			}
+		}
+	}
+	.message-people{
+		position:relative;
+		&:before{
+			position:absolute;
+			content: '';
+			width: 100%;
+			height: 250px;
+			background: #F2F8FF;
+			bottom: 0;
+		}
+		.message-people-tit{
+			font-size: 30px;
+			font-weight: bold;
+			margin-bottom: 32px;
+		}
+		.message-people-list{
+			position:relative;
+			display: flex;
+			margin: 0 -30px;
+			margin-right: 0;
+			.message-people-box-left{
+				width: 30%;
+				padding: 0 30px;
+			}
+			.message-people-box-right{
+				width: 70%;
+				padding: 0 30px;
+				padding-right:0;
+				.desc{
+					font-size: 15px;
+				}
+				.question-interview-box-tit{
+					color: #074098;
+				}
+			}
+		}
+	}
+}

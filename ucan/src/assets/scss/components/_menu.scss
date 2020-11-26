@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+/* -------------------
+  MENU
+--------------------*/
+/* -------------------
+  MENU
+--------------------*/
+.menu {
+  position: fixed; 
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  font-size: fs(14);
+  line-height: fs(18);
+  z-index: 900;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity .5s cubic-bezier(0.165, 0.84, 0.44, 1) 0s, transform .5s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  background: url(../images/top/menu-bg.png) right top no-repeat;
+  @include mq() {
+    background: rgba(7,64,152,.85);
+  }
+  &.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  @include mq() {
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    font-size: fs(12);
+    line-height: fs(20);
+    font-weight: bold;
+  }
+
+  &-inner {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin-left: auto;
+    @include mq() {
+      width: 100%;
+    }
+  }
+
+  &-box {
+    width: 450px;
+    @include mq() {
+      width: 200px;
+    }
+    &--btnGroup {
+      display: flex;
+      justify-content: space-between;
+      @include mq() {
+        display: block;
+      }
+      a {
+        border: solid 1px #000;
+        &:hover {
+          border: solid 1px #fff;
+        }
+        &:first-child {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    @include mq() {
+      height: auto;
+      margin-bottom: 5px; 
+    }
+  }
+
+  &-item {
+    width: 220px;
+    margin-bottom: 50px;
+    padding: 0 6px 0 0;
+    font-size: fs(16);
+    line-height: fs(22);
+    transition: 0.25s ease-in-out;
+    &:hover {
+      padding: 0 0 0 12px;
+      &:before {
+        left: 5px;
+      }
+    }
+    @include mq() {
+      font-size: fs(14);
+      margin-right: 0;
+      margin-bottom: 32px;
+    }
+
+    a {
+      position: relative;
+      display: block;
+      height: 100%;
+      padding-left: 30px;
+      color: #fff;
+      @include mq() {
+        padding-left: 25px;
+      }
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 11px;
+        display: inline-block;
+        width: 10px;
+        height: 2px;
+        background-color: #fff;
+        content: "";
+        transition: 0.25s ease-in-out;
+      }
+      
+    }
+  }
+
+  &-direct {
+    &--login {
+      margin-bottom: 10px;
+      width: 346px;
+      max-width: 100%;
+      @include mq() {
+        margin-bottom: 20px;
+      }
+      @include mq(sm2) {
+        max-width: 88%;
+      }
+    }
+    &--signup {
+      width: 346px;
+      @include mq(sm2) {
+        max-width: 88%;
+      }
+    }
+  }
+}
+
+
+// Button Open Menu SP
+.btn-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  z-index: 10000;
+  background-color: #074098;
+  transition: all .3s;
+  animation: fadeindown 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  @include mq() {
+    width: 80px;
+    height: 80px;
+  }
+  &.active {
+    background: none;
+  }
+  &:hover {
+    opacity: .8;
+  }
+  &--inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      width: 32px;
+      height: 45px;
+      @include mq() {
+        width: 26px;
+        height: 36px;
+      }
+      span {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 32px;
+        height: 2px;
+        background-color: #fff;
+        transition: all .3s;
+        @include mq() {
+          width: 26px;
+        }
+        &:nth-child(1) {
+          top: 0;
+          -webkit-transform-origin: left center;
+          -moz-transform-origin: left center;
+          -o-transform-origin: left center;
+          transform-origin: left center;
+        }
+
+        &:nth-child(2) {
+          top: 10px;
+          -webkit-transform-origin: left center;
+          -moz-transform-origin: left center;
+          -o-transform-origin: left center;
+          transform-origin: left center;
+        }
+
+        &:nth-child(3) {
+          top: 20px;
+          -webkit-transform-origin: left center;
+          -moz-transform-origin: left center;
+          -o-transform-origin: left center;
+          transform-origin: left center;
+        }
+
+        
+      }
+    }
+    .label {
+      // width: 100%;
+      position: absolute;
+      top: 68px;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      width: 32px;
+      font-size: fs(10);
+      color: #fff;
+      font-family: $font-a;
+      text-align: center;
+      @include mq() {
+        top: 52px;
+        width: 26px;
+        height: 36px;
+        font-size: fs(8);
+      }
+    }
+    &.active {
+      .icon {
+        span {
+          width: 100%;
+          &:nth-child(1) {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            top: -3px;
+            left: 5px;
+            @include mq() {
+              top: 0px;
+              left: 4px;
+            }
+          }
+
+          &:nth-child(2) {
+            width: 0%;
+            opacity: 0;
+          }
+
+          &:nth-child(3) {
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            top: 20px;
+            left: 5px;
+            @include mq() {
+              top: 19px;
+              left: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

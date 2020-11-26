@@ -1,0 +1,19 @@
+/* animation zoomout img */
+// struct html:   thumbWrapper > thumb > img
+.thumbWrapper {
+	&:hover {
+		.thumb {
+			img {
+				-webkit-transform: scale(1.08);
+			  transform: scale(1.08);
+			}
+		}
+	}
+	.thumb {
+		overflow: hidden;
+		img {
+			-webkit-transition: 0.4s ease;
+		  transition: 0.4s ease;
+		}
+	}
+}

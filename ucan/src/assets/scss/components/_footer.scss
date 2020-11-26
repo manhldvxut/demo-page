@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+/* -------------------
+  FOOTER
+--------------------*/
+.footer {
+  @include mq() {
+  }
+
+  &-inner {
+  	position: relative;
+  }
+
+  &-entry {
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+    height: 320px;
+    background: #074098 url(../images/common/entry.png) top left / 43.75% auto no-repeat;  
+    text-align: center;
+    @include mq() {
+      background-size: 78.12%;
+    }
+    &--title {
+      margin-bottom: 55px;
+      font-size: fs(23);
+      line-height: fs(34);
+      letter-spacing: 1.15px;
+      font-weight: bold;
+      color: #fff;
+      @include mq() {
+        margin-bottom: 30px;
+        font-size: fs(16);
+        line-height: fs(24);
+        letter-spacing: 0.8px;
+      }
+    }
+    &--direct {
+      display: flex;
+      @include mq() {
+        display: block;
+        padding: 0 15px;
+      }
+      .btn-blank-black2 {
+        &:first-child {
+          margin-right: 20px;
+          @include mq() {
+            margin-right: 0;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &-logo {
+    width: 166px;
+    margin: 50px auto 0;
+  }
+
+  &-navWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    @include mq() {
+      display: block;
+      margin: 60px auto 45px;
+      padding: 0 20px;
+    }
+  }
+
+  &-nav01 {
+  	display: flex;
+  	justify-content: center;
+    @include mq() {
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &--item {
+    	margin-right: 40px;
+      @include mq() {
+        width: 45%;
+        margin-bottom: 25px;
+        margin-right: 20px;
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+    	&:last-child {
+    		margin-right: 0;
+    	}
+      a {
+        font-size: fs(14);
+        line-height: fs(22);
+        font-weight: bold;
+        transition: all .3s;
+        &:hover {
+          color: #014099;
+        }
+      }
+    }
+  }
+  &-nav02 {
+  	display: flex;
+  	justify-content: center;
+    @include mq() {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &--item {
+    	margin-right: 30px;
+      @include mq() {
+        width: 100%;
+        margin-bottom: 16px;
+        margin-right: 0;
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    	&:last-child {
+    		margin-right: 0;
+    	}
+      a {
+      	font-size: fs(14);
+        line-height: fs(22);
+        color:#000;
+        font-weight: normal;
+        transition: all .3s;
+        &:hover {
+          color: #014099;
+        }
+      }
+    }
+  }
+
+  &-copyWrapper {
+    padding: 14px 0 12px;
+    background-color: #F8F8F8;
+    @include mq() {
+      display: block;
+      padding: 40px 0 12px;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      @include mq() {
+        display: block;
+      }
+    }
+  }
+
+  &-direct {
+    display: flex;
+    margin-right: auto;
+    @include mq() {
+      display: block;
+      padding-bottom: 28px;
+    }
+    &--item {
+      margin-right: 20px;
+      @include mq() {
+        margin-right: 0;
+        margin-bottom: 14px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        font-size: fs(12);
+        line-height: fs(16);
+        color: #6A6A6A;
+        transition: all .3s;
+        &:hover {
+          color: #014099;
+        }
+      }
+    }
+  }
+
+  &-copy {
+    font-size: fs(12);
+    line-height: fs(16);
+    color: #6A6A6A;
+    @include mq() {
+      margin-top: 30px;
+      display: block;
+    }
+  }
+}
+
+.backtop-wrapper {
+  position: relative;
+  .backtop {
+    display: none;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    z-index: 8999;
+    @include mq() {
+      right: 20px;
+    }
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 70px;
+      height: 70px;
+      padding-top: 12px;
+      border-radius: 50%;
+      color: #014099;
+      font-size: fs(12);
+      line-height: fs(12);
+      font-family: 'Rubik', sans-serif;
+      background: #fff url(../images/common/arrow-up.svg) no-repeat top 16px center;
+      background-size: 10px 6px;
+      transition: all .3s;
+      &:hover {
+        background-color: #92B8ED;
+      }
+    }
+    &.fixed {
+      position: fixed;
+      bottom: 20px;
+      top: auto;
+      right: 30px;
+      @include mq() {
+        right: 20px;
+      }
+    }
+  }
+}

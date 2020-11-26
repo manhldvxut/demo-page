@@ -1,0 +1,220 @@
+@charset "UTF-8";
+/* -------------------
+  COMMON
+--------------------*/
+
+// =========================================
+// Font family
+// =========================================
+
+// @font-face{
+//   font-family: EuclidFlex;
+//   src: url('../font/EuclidFlex/EuclidFlex-Regular.eot'); // IE9 Compat Modes
+//   src: url('../font/EuclidFlex/EuclidFlex-Regular.eot?#iefix') format('embedded-opentype'), // IE6-IE8
+//        url('../font/EuclidFlex/EuclidFlex-Regular.woff2') format('woff2'),  Super Modern Browsers 
+//        url('../font/EuclidFlex/EuclidFlex-Regular.woff') format('woff'), // Pretty Modern Browsers
+//        url('../font/EuclidFlex/EuclidFlex-Regular.ttf')  format('truetype'), // Safari, Android, iOS
+//        url('../font/EuclidFlex/EuclidFlex-Regular.svg#svgFontName') format('svg'); // Legacy iOS
+// }
+
+body {
+  font-family: $font-base;
+
+  &.fixed {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+// =========================================
+// CONTROL VIEW ELEMENT
+// =========================================
+
+.pc-only {
+  display: block;
+
+  @include mq() {
+    display: none !important;
+  }
+}
+
+.pc-only2 {
+  display: inline-block;
+
+  @include mq() {
+    display: none !important;
+  }
+}
+
+.sp-only {
+  display: none !important;
+
+  @include mq() {
+    display: block !important;
+  }
+}
+
+
+// =========================================
+// CONTAINER
+// =========================================
+.container {
+  position: relative;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  @include mq() {
+    width: 100%;
+  }
+}
+
+// =========================================
+// WRAPPER
+// =========================================
+.wrapper {
+  min-width: 1200px;
+  
+  // background-color: #F0F0F0;
+  overflow: hidden;
+
+  @include mq() {
+    min-width: 100%;
+    // background-color: #fff;
+  }
+}
+
+
+// =========================================
+// MAIN
+// =========================================
+.main {
+
+  &-inner {
+
+    &.endpage {
+      position: relative;
+
+      @include mq() {
+        background-color: #F0F0F0;
+      }
+
+      &.type2 {
+        padding-top: 16px;
+        @include mq() {
+          padding-top: 0;
+        }
+      }
+
+      .bgline {
+        position: absolute;
+        width: 300px;
+        height: 55px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+
+        @include mq() {
+          height: 25px;
+        }
+
+        &-wrapper {
+          position: relative;
+        }
+
+        &.line1 {
+          top: -102px;
+          right: -136px;
+          background-color: #2F5BAF;
+
+          @include mq() {
+            top: -50px;
+            right: -116px;
+          }
+
+          &.type2 {
+            top: -38px;
+            @include mq() {
+              display: none;
+            }
+
+          }
+        }
+
+        &.line2 {
+          top: -25px;
+          right: -160px;
+          background-color: #6B9FE8;
+
+          @include mq() {
+            top: -38px;
+            right: -160px;
+          }
+
+          &.type2 {
+            top: 40px;
+            @include mq() {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    @include mq() {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  &-contentEP {
+    position: relative;
+    padding: 80px 60px;
+    background-color: #fff;
+    border-radius: 10px;
+    &.type2 {
+      border-radius: 0 0 10px 10px;
+      @include mq() {
+        border-radius: 0;
+      }
+      .section-columb--adverList {
+        margin: 0 -10px;
+        @include mq() {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+    @include mq() {
+      padding: 40px 20px;
+      border-radius: 0;
+    }
+  }
+  &-backtopEP {
+    margin-top: 60px;
+    @include mq() {
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+    &.double {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      a {
+        margin: 0;
+        @include mq() {
+          width: 100%;
+        }
+        &:first-child {
+          margin-right: 20px;
+          @include mq() {
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    .btn-blue {
+      margin: 0 auto;
+    } 
+  }
+}
