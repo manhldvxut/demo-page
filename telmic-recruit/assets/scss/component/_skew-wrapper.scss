@@ -1,0 +1,109 @@
+.c-skew-wrapper {
+    position: relative;
+
+    > .c-skew-pattern {
+        position: absolute;
+        left: 0;
+        top: -560px;
+        width: 100%;
+        height: 560px;
+        pointer-events: none;
+        overflow: hidden;
+
+        &.is-reverse {
+            left: auto;
+            right: 0;
+            transform: scaleX(-1);
+        }
+
+        &.is-black {
+            // stylelint-disable-next-line
+            fill: #333 !important;
+        }
+
+        &.is-small {
+            height: 340px;
+            top: -340px;
+            width: 60%;
+        }
+    }
+
+    .c-skew-outer {
+        padding-top: 1px;
+        padding-bottom: 290px;
+
+        &.is-padding-small {
+            padding-bottom: 130px;
+        }
+    }
+    .c-skew-inner {
+        margin-top: -220px;
+        position: relative;
+        z-index: 5;
+    }
+
+    &.is-blue {
+        > .c-skew-pattern {
+            fill: $base-color-blue;
+        }
+        .c-skew-outer {
+            background: $base-color-blue;
+        }
+    }
+    &.is-purple {
+        > .c-skew-pattern {
+            fill: #C694EA;
+        }
+        .c-skew-outer {
+            background: #C694EA;
+        }
+    }
+    &.is-yellow {
+        > .c-skew-pattern {
+            fill: $base-color-yellow;
+        }
+        .c-skew-outer {
+            background: $base-color-yellow;
+        }
+    }
+    &.is-black {
+        > .c-skew-pattern {
+            fill: #333;
+        }
+        .c-skew-outer {
+            background: #333;
+        }
+    }
+    &.is-white {
+        > .c-skew-pattern {
+            fill: #fff;
+        }
+        .c-skew-outer {
+            background: #fff;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        > .c-skew-pattern {
+            top: calc(-16rem + 1px);
+            height: 16rem;
+
+            &.is-small {
+                top: -9.6rem;
+                height: 9.6rem;
+            }
+        }
+
+        .c-skew-outer {
+            padding-bottom: 8rem;
+
+            &.is-padding-small {
+                padding-bottom: 5rem;
+            }
+        }
+
+        .c-skew-inner {
+            margin-top: -8rem;
+        }
+    }
+}

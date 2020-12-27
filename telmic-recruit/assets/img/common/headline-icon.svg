@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.55" height="22.195" viewBox="0 0 22.55 22.195">
+  <g id="icon" transform="translate(0.75 0.75)">
+    <path id="star_大" d="M260.917,542.35c-.643-5.352-2.214-7.089-7-7.776,4.786-.689,6.357-2.428,7-7.78.642,5.352,2.213,7.09,7,7.78-4.788.687-6.359,2.424-7,7.776" transform="translate(-246.918 -521.794)" fill="#ffd83c" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+    <path id="star_小" d="M258.417,536.794c-.413-3.441-1.423-4.557-4.5-5,3.077-.443,4.087-1.561,4.5-5,.413,3.441,1.423,4.558,4.5,5-3.078.442-4.088,1.558-4.5,5" transform="translate(-253.918 -526.794)" fill="#fff" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

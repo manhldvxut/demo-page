@@ -1,0 +1,33 @@
+.u-figure {
+    margin: 0;
+
+    img {
+        width: 100%;
+    }
+
+    figcaption {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+
+        &::before {
+            content: '';
+            display: block;
+            background: url(../img/common/figure-line.svg) no-repeat center center / cover;
+            height: 0;
+            width: 100%;
+            padding-top: 5%;
+            margin: 10px 0 15px;
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+        .u-col.is-2 &,
+        .u-pc-col.is-2 & {
+            figcaption::before {
+                background: url(../img/common/figure-line3.svg) no-repeat center center / cover;
+            }
+        }
+    }
+}

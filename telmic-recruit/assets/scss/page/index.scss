@@ -1,0 +1,30 @@
+@import '../value';
+
+.index-page {
+    position: relative;
+    font-weight: bold;
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: url(../../img/index/bg-pattern.png) repeat center top;
+    }
+
+    @import './_index/main-visual';
+    @import './_index/main-section';
+
+    @import './_index/news-section';
+    @import './_index/search-section';
+    @import './_index/works-section';
+    @import './_index/interview-section';
+    @import './_index/relay-section';
+    @import './_index/job-section';
+    @import './_index/voice-section';
+    @import './_index/banners';
+}

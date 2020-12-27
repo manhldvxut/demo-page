@@ -1,0 +1,23 @@
+.u-layout {
+    width: 1040px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+        width: auto;
+        margin: 0 2rem;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .u-pc-layout {
+        width: 1040px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .u-sp-layout {
+        width: auto;
+        margin: 0 2rem;
+    }
+}

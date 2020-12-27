@@ -1,0 +1,295 @@
+.g-nav {
+    > ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+
+        > li {
+            list-style: none;
+            white-space: nowrap;
+
+            + li {
+                margin-left: 40px;
+            }
+
+            > a {
+                color: $text-color-dark;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                position: relative;
+
+                .en {
+                    font-size: 1.1rem;
+                }
+                .ja {
+                    font-size: 1.4rem;
+                }
+
+                &::after {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: $text-color-dark;
+                    content: '';
+                    opacity: 0;
+                    transition: height 0.3s, opacity 0.3s, transform 0.3s;
+                    transform: translateY(0);
+                }
+
+                &.is-active::after,
+                &:focus::after,
+                &:hover::after {
+                    height: 3px;
+                    opacity: 1;
+                    transform: translateY(10px);
+                }
+            }
+
+            &.btn-entry {
+                > a {
+                    border: 2px solid $text-color-dark;
+                    padding: 2px;
+                    font-size: 2rem;
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 8px;
+                        height: 8px;
+                        border-style: solid;
+                        border-width: 0 2px 2px 0;
+                        border-color: $text-color-light;
+                        position: absolute;
+                        left: auto;
+                        right: 10px;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto 0;
+                        z-index: 3;
+                        opacity: 1;
+                        transition: border-color .3s;
+                        transform: rotate(-45deg);
+                        box-sizing: border-box;
+                        // stylelint-disable-next-line
+                        background: none !important;
+                    }
+
+                    > span:not(:empty) {
+                        color: $text-color-light;
+                        background: $text-color-light;
+                        width: 172px;
+                        height: 72px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        z-index: 2;
+                        transition: color .3s;
+                        will-change: color;
+
+                        &::before, &::after {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            width: 100%;
+                            height: 50%;
+                            z-index: -1;
+                            background: $text-color-dark;
+                            transition: background .3s, height .3s;
+                            will-change: background, height;
+                        }
+                        &::before {
+                            top: 0;
+                        }
+                        &::after {
+                            bottom: 0;
+                        }
+                    }
+
+                    &:hover {
+                        &::after {
+                            border-color: $text-color-dark;
+                        }
+
+                        > span {
+                            color: $text-color-dark;
+                            // background: $text-color-light;
+                            &::before, &::after {
+                                height: 0;
+                                background: $text-color-light;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .is-black & {
+        > ul > li > a {
+            color: $text-color-light;
+
+            &::after {
+                background: $text-color-light;
+            }
+        }
+    }
+    .is-white & {
+        > ul > li > a {
+            color: $text-color-dark;
+
+            &::after {
+                background: $text-color-dark;
+            }
+        }
+    }
+
+    @media screen and (min-width:1041px) and (max-width: 1400px) {
+        > ul {
+            > li {
+                + li {
+                    margin-left: 2.857vw;
+                }
+
+                > a {
+                    .en {
+                        font-size: 0.786vw;
+                    }
+                    .ja {
+                        font-size: 1vw;
+                    }
+                }
+
+                &.btn-entry {
+                    > a {
+                        border-width: 0.143vw;
+                        padding: 0.143vw;
+                        font-size: 1.429vw;
+
+                        > span:not(:empty) {
+                            width: 12.286vw;
+                            height: 5.143vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:769px) and (max-width: 1040px) {
+        > ul {
+            > li {
+                + li {
+                    margin-left: 28px;
+                }
+
+                > a {
+                    .en {
+                        font-size: .82rem;
+                    }
+                    .ja {
+                        font-size: 1.04rem;
+                    }
+                }
+
+                &.btn-entry {
+                    > a {
+                        border-width: 1px;
+                        padding: 1px;
+                        font-size: 1.48rem;
+
+                        > span:not(:empty) {
+                            width: 128px;
+                            height: 54px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        background: rgba(0, 0, 0, .7);
+        position: fixed;
+        left: 0;
+        top: 7rem;
+        right: 0;
+        bottom: 100%;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        transition: bottom .3s;
+        will-change: bottom;
+
+        .is-show-nav & {
+            bottom: 0;
+        }
+
+        > ul {
+            display: block;
+            padding-bottom: 4rem;
+
+            > li {
+                + li {
+                    margin: 0;
+                }
+
+                > a {
+                    flex-direction: row-reverse;
+                    justify-content: flex-end;
+                    padding: 1.5rem 2rem;
+
+                    .en {
+                        font-size: 1.2rem;
+                        margin-left: 1.5rem;
+                    }
+                    .ja {
+                        font-size: 1.6rem;
+                    }
+
+                    &::after {
+                        content: none;
+                    }
+                }
+
+                &.btn-entry {
+                    margin-top: 2rem;
+                    padding: 0 2rem;
+                    > a {
+                        &::after {
+                            width: .8rem;
+                            height: .8rem;
+                            border-width: 0 .2rem .2rem 0;
+                            right: 1rem;
+                        }
+
+                        > span:not(:empty) {
+                            width: 100%;
+                            height: 6.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// スクロール後
+.is-fixed {
+    .g-nav {
+        > ul > li > a {
+            color: $text-color-dark;
+
+            &::after {
+                background: $text-color-dark;
+            }
+        }
+    }
+}

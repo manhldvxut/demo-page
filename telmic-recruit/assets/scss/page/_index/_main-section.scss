@@ -1,0 +1,60 @@
+@keyframes dash {
+    to {
+        stroke-dashoffset: 500;
+    }
+}
+
+.main-section {
+    color: $text-color-dark;
+    position: relative;
+    z-index: 1;
+
+    .copy {
+        margin: 0 0 30px -50px;
+
+        svg {
+            width: 830px;
+            height: 517px;
+
+            path {
+                animation: dash 10s linear infinite;
+                stroke-dasharray: 50;
+            }
+        }
+    }
+
+    .descript {
+        max-width: 740px;
+        margin: 0 auto 80px;
+        text-align: justify;
+
+        p {
+            + p {
+                margin-top: 1.6em;
+            }
+        }
+
+        .c-button {
+            margin-top: 3em;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .copy {
+            margin: 0 -2rem 2.5rem;
+
+            svg {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .descript {
+            margin-bottom: 7rem;
+
+            .c-button {
+                margin-top: 3rem;
+            }
+        }
+    }
+}

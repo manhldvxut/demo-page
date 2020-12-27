@@ -1,0 +1,15 @@
+// stylelint-disable
+
+@media screen and (min-width: 769px) {
+    .u-show-sp,
+    .u-hide-pc {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .u-show-pc,
+    .u-hide-sp {
+        display: none !important;
+    }
+}

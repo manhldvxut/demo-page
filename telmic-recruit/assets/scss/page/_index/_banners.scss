@@ -1,0 +1,303 @@
+.banners {
+    padding-bottom: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+        padding-top: 9rem;
+        padding-bottom: 12rem;
+        margin: 0 2rem;
+    }
+}
+
+.banners-environment {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 90px;
+    padding-top: 25.8%;
+    position: relative;
+    box-sizing: border-box;
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        border: 2px solid #CFCFCF;
+        border-bottom: none;
+        left: 5px;
+        top: 5px;
+        right: 5px;
+        bottom: 5px;
+        pointer-events: none;
+    }
+
+    a {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        color: $text-color-dark;
+        text-decoration: none;
+        overflow: hidden;
+        background: $text-color-light;
+
+        > picture > img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: opacity .3s, transform .3s;
+            will-change: opacity, transform;
+        }
+
+        &:hover {
+            > picture > img {
+                opacity: .8;
+                transform: scale(1.05);
+            }
+        }
+    }
+    p {
+        margin: 0;
+    }
+
+    .inner {
+        width: 100%;
+        height: 100%;
+        padding: 0 80px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+
+        &::before, &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 5px;
+            height: 2px;
+            background: #CFCFCF;
+        }
+        &::before {
+            left: 5px;
+            width: 62%;
+        }
+        &::after {
+            right: 5px;
+            width: 3%;
+        }
+    }
+
+    .catch {
+        position: absolute;
+        left: 45px;
+        top: 50px;
+    }
+
+    .head {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-shrink: 0;
+        line-height: 1.4;
+        .en {
+            font-size: 1.6rem;
+        }
+        .ja {
+            font-size: 3.2rem;
+        }
+    }
+
+    .descript {
+        text-align: left;
+        width: 450px;
+        line-height: 2;
+        font-size: 1.4rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-top: 146.2686567%;
+        margin-bottom: 7rem;
+
+        .inner {
+            padding: 4.5rem 2.5rem 0;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            &::before {
+                width: 8%;
+            }
+            &::after {
+                width: 8%;
+            }
+        }
+
+        .catch {
+            position: static;
+            margin-bottom: 1rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .head {
+            margin-bottom: 3rem;
+            align-items: center;
+        }
+
+        .descript {
+            width: auto;
+            margin-bottom: 2.5rem;
+        }
+    }
+}
+
+.banners-view {
+    width: 112px;
+    height: 52px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+
+    &::before, &::after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        display: block;
+        pointer-events: none;
+        border-width: 2px;
+        border-style: solid;
+    }
+    &::before {
+        left: 0;
+        top: 0;
+        border-color: $text-color-dark transparent transparent $text-color-dark;
+    }
+    &::after {
+        right: 0;
+        bottom: 0;
+        border-color: transparent $text-color-dark $text-color-dark transparent;
+    }
+
+    &.is-black {
+        color: $text-color-light;
+
+        &::before {
+            border-color: $text-color-light transparent transparent $text-color-light;
+        }
+        &::after {
+            border-color: transparent $text-color-light $text-color-light transparent;
+        }
+    }
+}
+
+.banners-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 800px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+        width: auto;
+        display: block;
+    }
+}
+
+.banners-col {
+    margin: 0;
+    width: 400px;
+    padding-top: 50%;
+    position: relative;
+
+    + .banners-col {
+        margin-top: 70px;
+    }
+
+    > a {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        color: $text-color-dark;
+        text-decoration: none;
+        overflow: hidden;
+        background: $text-color-light;
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            border: 2px solid rgba(#fff, .6);
+            left: 5px;
+            top: 5px;
+            right: 5px;
+            bottom: 5px;
+            pointer-events: none;
+        }
+
+        > img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: opacity .3s, transform .3s;
+            will-change: opacity, transform;
+        }
+
+        &:hover {
+            img {
+                opacity: .8;
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .head {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-shrink: 0;
+        line-height: 1.4;
+        position: relative;
+        height: 100%;
+
+        .en {
+            font-size: 1.6rem;
+        }
+        .ja {
+            font-size: 3.2rem;
+        }
+    }
+
+    .banners-view {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: auto;
+        padding-top: 100%;
+
+        + .banners-col {
+            margin-top: 4rem;
+        }
+    }
+}

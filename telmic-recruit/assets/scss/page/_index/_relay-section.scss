@@ -1,0 +1,279 @@
+.relay-section {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 160px;
+
+    .c-headline {
+        white-space: nowrap;
+        margin-bottom: 35px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 4rem;
+    }
+}
+
+.relay-wrap {
+    position: relative;
+    min-height: 710px;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        min-height: 0;
+    }
+}
+
+.relay-descript {
+    margin: 0 0 25px;
+    width: 350px;
+    line-height: 2;
+
+    @media screen and (max-width: 768px) {
+        width: auto;
+        line-height: 1.8;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.relay-list {
+    position: absolute;
+    right: -35px;
+    top: 70px;
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+        position: static;
+        flex-direction: column;
+    }
+}
+
+.relay-col {
+    transform: skewX(-21deg);
+    width: 180px;
+    height: 640px;
+    margin: 0 30px;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 427px;
+        height: 640px;
+        display: block;
+        right: 0;
+        top: 0;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;;
+        transform-origin: left top;
+        transform: skewX(21deg);
+    }
+
+    &.is-left {
+        &::before {
+            background-image: url(../../img/index/relay-bg01@2x.png);
+        }
+
+        .relay-title {
+            &::before {
+                left: -48px;
+
+                @media screen and (max-width: 768px) {
+                    content: none;
+                }
+            }
+            div {
+                &::before {
+                    left: -12px;
+
+                    @media screen and (max-width: 768px) {
+                        content: none;
+                    }
+                }
+                &::after {
+                    left: -24px;
+
+                    @media screen and (max-width: 768px) {
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+    &.is-center {
+        &::before {
+            background-image: url(../../img/index/relay-bg02@2x.png);
+        }
+
+        .relay-title {
+            &::before {
+                content: none;
+            }
+            div {
+                &::before, &::after {
+                    content: none;
+                }
+            }
+        }
+    }
+    &.is-right {
+        &::before {
+            background-image: url(../../img/index/relay-bg03@2x.png);
+        }
+
+        .relay-title {
+            &::before {
+                right: -24px;
+
+                @media screen and (max-width: 768px) {
+                    content: none;
+                }
+            }
+            &::after {
+                content: none;
+            }
+            div {
+                &::before {
+                    right: -36px;
+
+                    @media screen and (max-width: 768px) {
+                        content: none;
+                    }
+                }
+                &::after {
+                    right: -48px;
+
+                    @media screen and (max-width: 768px) {
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        width: auto;
+        height: 24rem;
+        margin: 0 -2rem 0;
+        transform-origin: left bottom;
+
+        &::before {
+            content: none;
+        }
+
+        & + .relay-col {
+            margin-top: -5rem;
+        }
+    }
+}
+
+.relay-photo {
+    transform: skewX(21deg);
+    position: relative;
+    height: 460px;
+    width: 240px;
+    margin: 40px 0 20px -140px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    @media screen and (max-width: 768px) {
+        width: 16rem;
+        height: 30rem;
+        margin: -6rem 0 0 -5.5rem;
+        overflow: hidden;
+        align-items: flex-end;
+        justify-content: center;
+
+        img {
+            width: 16rem;
+        }
+    }
+}
+
+.relay-title {
+    position: relative;
+    background: #fff;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    margin: 0 0 15px -25px;
+    padding: 0 1em;
+    box-sizing: border-box;
+
+    &::before, &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: #fff;
+    }
+    &::before {
+        top: 0;
+        height: 100%;
+        width: 16px;
+    }
+    &::after {
+        right: 0;
+        top: 56px;
+        height: 36px;
+        width: 2px;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+        margin: 0;
+    }
+
+    div {
+        &::before, &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: #fff;
+        }
+    }
+
+    span {
+        display: block;
+        transform: skewX(21deg);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        line-height: 1.2;
+    }
+
+    @media screen and (max-width: 768px) {
+        position: absolute;
+        top: 6rem;
+        left: 6.8rem;
+        margin: 0;
+        height: 5.5rem;
+        width: 24.4rem;
+
+        &::after {
+            content: none;
+        }
+    }
+}
+
+.relay-division {
+    transform: skewX(21deg);
+    position: relative;
+    text-align: center;
+    width: 260px;
+    margin: 0 0 0 -40px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @media screen and (max-width: 768px) {
+        position: absolute;
+        width: 27rem;
+        top: 12rem;
+        left: 6.8rem;
+        margin: 0;
+    }
+}

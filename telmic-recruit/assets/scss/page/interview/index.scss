@@ -1,0 +1,12 @@
+@import '../../value';
+
+.interview-page {
+    background: #EFEFEF;
+    padding-bottom: 480px;
+
+    @import './_index/interview-slider';
+
+    @media screen and (max-width: 768px) {
+        padding-bottom: 20rem;
+    }
+}

@@ -1,0 +1,61 @@
+@import './inc/normalize';
+@import './value';
+
+html {
+    font: 62.5%/1.6 "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+
+    @media screen and (max-width: 768px) {
+        font-size: 2.604vw;
+    }
+}
+
+body {
+    font-size: 1.6rem;
+    color: $text-color-light;
+    min-width: 1060px;
+
+    @media screen and (max-width: 768px) {
+        min-width: 0;
+        font-size: 15px;
+    }
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+}
+
+// Utility
+@import './utility/font';
+@import './utility/layout';
+@import './utility/align';
+@import './utility/float';
+@import './utility/fade-in';
+@import './utility/show';
+@import './utility/grid';
+@import './utility/text';
+@import './utility/spacing';
+@import './utility/figure';
+
+// Component
+@import './component/button';
+@import './component/headline';
+@import './component/h';
+@import './component/tag-nav';
+@import './component/skew-wrapper';
+@import './component/breadcrumbs';
+@import './component/tab-nav';
+@import './component/post-links';
+@import './component/pagination';
+
+// Global
+@import './global/header';
+@import './global/nav';
+@import './global/entry';
+@import './global/footer';
+@import './global/sub-main';
+
+// Page
+// @import './page/index';
+// @import './page/interview/index';

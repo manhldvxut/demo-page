@@ -1,0 +1,44 @@
+.main-section {
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 2rem;
+    }
+}
+
+.main-thumbnail {
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 2rem;
+    }
+}
+
+.main-title {
+    font-size: 3.8rem;
+    line-height: 1.42;
+    margin: 0;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -70px;
+        top: -110px;
+        background: url(../../../img/interview/detail/main-icon.svg) no-repeat center center / contain;
+        width: 118px;
+        height: 110px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 3rem;
+
+        &::before {
+            left: -2.5rem;
+            top: -7rem;
+            width: 7.86rem;
+            height: 7.33rem;
+        }
+    }
+}

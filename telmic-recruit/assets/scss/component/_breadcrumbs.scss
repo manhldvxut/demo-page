@@ -1,0 +1,39 @@
+.c-breadcrumbs {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+
+    ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    li {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+        &::after {
+            content: '>';
+            font-size: .8em;
+            margin: 0 .8em;
+        }
+        &:last-child {
+            &::after {
+                content: none;
+            }
+        }
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    span {
+        font-weight: bold;
+    }
+}

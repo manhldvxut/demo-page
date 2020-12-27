@@ -1,0 +1,34 @@
+// stylelint-disable
+@for $i from 0 through 10 {
+    .u-m-#{$i} {
+        margin: $i * 1rem !important;
+    }
+    .u-mt-#{$i} {
+        margin-top: $i * 1rem !important;
+    }
+    .u-mb-#{$i} {
+        margin-bottom: $i * 1rem !important;
+    }
+    .u-ml-#{$i} {
+        margin-left: $i * 1rem !important;
+    }
+    .u-mr-#{$i} {
+        margin-right: $i * 1rem !important;
+    }
+
+    .u-p-#{$i} {
+        padding: $i * 1rem !important;
+    }
+    .u-pt-#{$i} {
+        padding-top: $i * 1rem !important;
+    }
+    .u-pb-#{$i} {
+        padding-bottom: $i * 1rem !important;
+    }
+    .u-pl-#{$i} {
+        padding-left: $i * 1rem !important;
+    }
+    .u-pr-#{$i} {
+        padding-right: $i * 1rem !important;
+    }
+}

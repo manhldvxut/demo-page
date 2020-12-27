@@ -1,0 +1,16 @@
+@import '../../value';
+
+.interview-detail-page {
+    background: #EFEFEF;
+    padding-bottom: 480px;
+
+    @import './_detail/main';
+    @import './_detail/info';
+    @import './_detail/interview';
+    @import './_detail/schedule';
+    @import './_detail/message';
+
+    @media screen and (max-width: 768px) {
+        padding-bottom: 20rem;
+    }
+}

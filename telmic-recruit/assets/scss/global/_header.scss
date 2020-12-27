@@ -1,0 +1,173 @@
+.g-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px 0 55px;
+    width: 100%;
+    min-width: 1040px;
+    height: 92px;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background .3s;
+    z-index: 100;
+    font-weight: bold;
+
+    .logo {
+        margin: 0;
+
+        a {
+            display: block;
+        }
+
+        img, svg {
+            vertical-align: top;
+            width: 129px;
+            height: 66px;
+            fill: #fff;
+            transition: fill .3s;
+            will-change: fill;
+        }
+    }
+
+    &.is-white {
+        .logo svg {
+            fill: #fff;
+        }
+    }
+    &.is-black {
+        .logo svg {
+            fill: #000;
+        }
+    }
+
+    .g-header-toggle,
+    .g-header-entry {
+        display: none;
+    }
+
+    @media screen and (min-width:1041px) and (max-width: 1400px) {
+        padding-left: 3.929vw;
+        .logo {
+            width: 9.214vw;
+        }
+    }
+
+    @media screen and (min-width:769px) and (max-width: 1040px) {
+        padding-left: 40px;
+        .logo {
+            width: 93px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 7rem;
+        min-width: 0;
+        padding: 0 2rem;
+
+        .logo {
+            img, svg {
+                width: 10rem;
+                height: 5.2rem;
+            }
+        }
+
+        .g-header-toggle {
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 2rem;
+            width: 3rem;
+            height: 3rem;
+            margin: auto 0;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+            outline: none;
+            overflow: hidden;
+
+            > span {
+                position: absolute;
+                display: block;
+                width: 3rem;
+                height: .3rem;
+                background: #fff;
+                left: 0;
+                margin-top: -.15rem;
+                transition: left .3s, top .3s, transform .3s;
+                will-change: left, top, transform;
+
+                &:nth-child(1) {
+                    top: .15rem;
+                }
+                &:nth-child(2) {
+                    top: 50%;
+                }
+                &:nth-child(3) {
+                    top: calc(100% - .15rem);
+                }
+            }
+
+            .is-show-nav & {
+                > span {
+                    &:nth-child(1) {
+                        top: 50%;
+                        transform: rotate(45deg);
+                    }
+                    &:nth-child(2) {
+                        left: 100%;
+                    }
+                    &:nth-child(3) {
+                        top: 50%;
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+
+        .g-header-entry {
+            display: flex;
+            position: absolute;
+            align-items: center;
+            right: 7.5rem;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            a {
+                display: block;
+                box-sizing: border-box;
+                border: .2rem solid $text-color-dark;
+                padding: .2rem;
+                text-decoration: none;
+            }
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+                background: $text-color-dark;
+                color: $text-color-light;
+                font-size: 1.4rem;
+                height: 3rem;
+                width: 10.2rem;
+            }
+        }
+    }
+}
+
+// スクロール後
+.is-fixed {
+    .g-header {
+        background: rgba(0, 0, 0, .7);
+        .logo {
+            svg {
+                fill: #fff;
+            }
+        }
+    }
+}

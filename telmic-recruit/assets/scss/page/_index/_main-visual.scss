@@ -1,0 +1,29 @@
+.main-visual {
+    padding-top: 140px;
+
+    @media screen and (max-width: 768px) {
+        padding-top: 9rem;
+    }
+}
+.particles-js {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../../img/index/main.jpg) no-repeat center top / cover;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+.particles-js-canvas-el {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: normal;
+    // stylelint-disable
+    width: 100% !important;
+    height: 100% !important;
+    // stylelint-enable
+}

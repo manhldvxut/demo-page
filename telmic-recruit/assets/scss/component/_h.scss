@@ -1,0 +1,81 @@
+.c-h2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 2.6rem;
+    margin: 0 0 25px;
+    line-height: 1.2;
+
+    &::before {
+        content: '';
+        display: block;
+        background: url(../img/common/headline-icon.svg) no-repeat center center / contain;
+        width: .75em;
+        height: .75em;
+        margin-right: .3em;
+        margin-top: .2em;
+        flex-shrink: 0;
+    }
+
+    &.is-interview {
+        &::before {
+            width: 1.3em;
+            height: 1.3em;
+            margin-top: -.15em;
+            margin-bottom: -.15em;
+            background: url(../img/common/headline-icon-interview.svg) no-repeat center center / contain;
+        }
+    }
+
+    &.is-interview-icon {
+        &::before {
+            width: 1em;
+            height: 1em;
+            margin-top: 0;
+            background: url(../img/interview/common/icon-interview.svg) no-repeat center center / contain;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 1.5rem;
+        font-size: 2.2rem;
+    }
+}
+
+.c-h3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 2rem;
+    margin: 0 0 20px;
+    line-height: 1.2;
+
+    &::before {
+        content: '';
+        display: block;
+        background: url(../img/common/headline-sub-icon.svg) no-repeat center center / contain;
+        width: 1em;
+        height: 1em;
+        margin-right: .3em;
+        flex-shrink: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+    }
+}
+
+.c-h-border {
+    font-size: 2rem;
+    line-height: 1.2;
+    padding: 0 0 15px;
+    margin: 0 0 15px;
+    border-bottom: 1px dashed $text-color-light;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,73 @@
+.job-section {
+    background: url(../../img/index/job-bg@2x.png) no-repeat calc(50% + 410px) 170px / 452px 338px;
+
+    .headline-wrap {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 50px;
+    }
+
+    .u-layout {
+        position: relative;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-top: 10rem;
+        background-position: right 30rem;
+        background-size: 100% auto;
+
+        .headline-wrap {
+            justify-content: flex-start;
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+.job-description {
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+    line-height: 2;
+
+    p {
+        width: 50%;
+        margin: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 3rem;
+        p {
+            width: auto;
+        }
+    }
+}
+
+.job-image {
+    pointer-events: none;
+    margin: 0;
+
+    @media screen and (max-width: 768px) {
+        margin: 0 -2rem;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            max-width: none;
+            position: relative;
+            left: 50%;
+            width: 180%;
+            margin-left: -90%;
+        }
+    }
+}
+
+.job-button {
+    position: absolute;
+    right: 0;
+    top: 210px;
+    margin: 0;
+
+    @media screen and (max-width: 768px) {
+        position: static;
+    }
+}

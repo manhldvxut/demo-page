@@ -1,0 +1,82 @@
+.interview-section {
+    margin-bottom: 70px;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 5rem;
+    }
+}
+.interview-inner-section {
+    margin-bottom: 70px;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 5rem;
+    }
+}
+
+.interview-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &.is-reverse {
+        flex-direction: row-reverse;
+    }
+
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+}
+
+.interview-row-photo {
+    margin: 0 0 1em;
+    flex-shrink: 0;
+
+    img {
+        width: 100%;
+    }
+}
+
+.interview-row > .interview-row-photo {
+    width: calc(100% - 580px);
+
+    @media screen and (max-width: 768px) {
+        width: auto;
+    }
+}
+
+.interview-row-text {
+    width: 540px;
+    flex-shrink: 0;
+    margin-left: 40px;
+
+    @media screen and (max-width: 768px) {
+        width: auto;
+        margin-left: 0;
+    }
+}
+
+.interview-row-talk {
+    dt {
+        font-weight: bold;
+        width: 3em;
+
+        & ~ dt {
+            margin-top: 1.5em;
+        }
+    }
+    dd {
+        margin-top: -1.6em;
+        margin-left: 4em;
+    }
+}
+
+.interview-row.is-reverse {
+    .interview-row-text {
+        margin-left: 0;
+        margin-right: 40px;
+
+        @media screen and (max-width: 768px) {
+            margin-right: 0;
+        }
+    }
+}

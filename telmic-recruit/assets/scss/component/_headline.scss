@@ -1,0 +1,136 @@
+.c-headline {
+    position: relative;
+    line-height: 1;
+    margin: 0;
+    color: $text-color-dark;
+    font-weight: bold;
+
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background: $text-color-dark;
+        transform-origin: left bottom;
+        transform: skewX(-20deg);
+    }
+    &::before {
+        left: 0;
+    }
+    &::after {
+        left: 12px;
+    }
+
+    .c-headline_inner {
+        padding-left: 70px;
+        display: flex;
+        flex-direction: column;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            background: $text-color-dark;
+            transform-origin: left bottom;
+            transform: skewX(-20deg);
+        }
+        &::before {
+            left: 24px;
+        }
+    }
+
+    .en {
+        font-size: 1.6rem;
+    }
+    .ja {
+        margin-top: 5px;
+        font-size: 3.6rem;
+    }
+
+    &.is-black {
+        color: $text-color-light;
+
+        &::before, &::after {
+            background: $text-color-light;
+        }
+        .c-headline_inner {
+            &::before {
+                background: $text-color-light;
+            }
+        }
+    }
+
+    &.is-white {
+        color: $text-color-dark;
+
+        &::before, &::after {
+            background: $text-color-dark;
+        }
+        .c-headline_inner {
+            &::before {
+                background: $text-color-dark;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &::before, &::after {
+            width: .6rem;
+        }
+        &::after {
+            left: 1rem;
+        }
+
+        .c-headline_inner {
+            padding-left: 5rem;
+
+            &::before {
+                width: .6rem;
+                left: 2rem;
+            }
+        }
+
+        .en {
+            font-size: 1.1rem;
+        }
+        .ja {
+            font-size: 2.6rem;
+        }
+    }
+}
+
+.c-headline_wrapper {
+    &::before, &::after {
+        content: '';
+        display: block;
+        background: url(../img/common/headline-decoration.svg) no-repeat left top / contain;
+        width: 336px;
+        height: 89px;
+    }
+
+    &::before {
+        margin-bottom: 10px;
+    }
+    &::after {
+        margin-top: 20px;
+        transform: rotate(180deg);
+    }
+
+    @media screen and (max-width: 768px) {
+        &::before, &::after {
+            width: 26.88rem;
+            height: 7.12rem;
+        }
+        &::before {
+            margin-bottom: 1rem;
+        }
+        &::after {
+            margin-top: 2rem;
+        }
+    }
+}

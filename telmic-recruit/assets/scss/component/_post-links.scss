@@ -1,0 +1,167 @@
+.c-post-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        margin-bottom: 3rem;
+    }
+}
+
+.c-post-links-article {
+    width: 330px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    > a {
+        color: $text-color-light;
+        text-decoration: none;
+        img, figcaption {
+            transition: opacity .3s;
+            will-change: opacity;
+        }
+
+        &:hover {
+            text-decoration: underline;
+
+            img, figcaption {
+                opacity: .8;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        width: auto;
+        margin: 0 0 3rem;
+    }
+}
+
+.c-post-links-photo {
+    margin: 0 0 1.5rem;
+    position: relative;
+    background: #fff;
+    padding-top: 60.6%;
+
+    > img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    > figcaption {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .2em 1em;
+        font-size: 1.2rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: #FFD840;
+        font-weight: bold;
+
+        i, img {
+            height: 1.2em;
+            margin-right: .5em;
+        }
+    }
+}
+
+.c-post-links-title {
+    font-size: 1.8rem;
+}
+
+.c-post-links-profile {
+    display: flex;
+    justify-content: flex-start;
+    line-height: 1.4;
+    font-weight: bold;
+    flex-direction: column;
+
+    .name {
+        margin-right: 1em;
+
+        > span {
+            display: block;
+        }
+
+        .ja {
+            font-size: 1.5rem;
+        }
+        .en {
+            font-size: 1.2rem;
+        }
+    }
+    .meta {
+        margin-top: .2em;
+        > span {
+            display: block;
+        }
+
+        .division {
+            font-size: 1.3rem;
+            small {
+                margin-left: .5em;
+            }
+        }
+        .year {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.c-post-links-cross {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .name {
+        flex-grow: 1;
+        text-align: center;
+        width: 50%;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    .cross {
+        width: 2rem;
+        height: 2rem;
+        position: relative;
+        font-size: 0;
+        margin: 0 1rem;
+
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #707070;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        &::before {
+            transform: rotate(45deg);
+        }
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.c-post-links-tags {
+    margin-top: 1.5rem;
+}
