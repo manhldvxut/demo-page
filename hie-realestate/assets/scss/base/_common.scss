@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* -------------------
+  COMMON
+--------------------*/
+
+// =========================================
+// Font family
+// =========================================
+
+body {
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+
+  &.fixed {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+// =========================================
+// CONTROL VIEW ELEMENT
+// =========================================
+
+.pc-only {
+  display: block;
+
+  @include mq() {
+    display: none !important;
+  }
+}
+
+.pc-only2 {
+  display: inline-block;
+
+  @include mq() {
+    display: none !important;
+  }
+}
+
+.sp-only {
+  display: none !important;
+
+  @include mq() {
+    display: block !important;
+  }
+}
+
+
+// =========================================
+// WRAPPER
+// =========================================
+.wrapper {
+  min-width: 1400px;
+  background-color: #fff;
+  overflow: hidden;
+
+  @include mq() {
+    min-width: 100%;
+    padding-top: 60px;
+  }
+}
+
+// =========================================
+// MAIN
+// =========================================
+.main {
+}
+
+// =========================================
+// CONTAINER
+// =========================================
+// .container {
+//   position: relative;
+//   width: 1040px;
+//   margin: 0 auto;
+//   @include mq() {
+//     width: 100%;
+//   }
+// }

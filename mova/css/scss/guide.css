@@ -9,10 +9,10 @@ Error: Undefined variable: "$red".
 54: 	h3{
 55: 		color: $red;
 56: 		font-size: 18px;
-57: 		margin-bottom: 16px;
-58: 		font-weight: bold;
-59: 	}
-60: 	p{
+57: 		font-weight: bold;
+58: 	}
+59: 	p{
+60: 		font-weight: bold;
 
 Backtrace:
 C:\xampp\htdocs\demo_MoVa\css\scss\guide.scss:55
@@ -73,4 +73,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$red\".\A         on line 55 of C:\xampp\htdocs\demo_MoVa\css\scss\guide.scss\A \A 50: }\A 51: .gui-user-info{\A 52: 	position: relative;\A 53: 	padding-left: 15px;\A 54: 	h3{\A 55: 		color: $red;\A 56: 		font-size: 18px;\A 57: 		margin-bottom: 16px;\A 58: 		font-weight: bold;\A 59: 	}\A 60: 	p{"; }
+  content: "Error: Undefined variable: \"$red\".\A         on line 55 of C:\xampp\htdocs\demo_MoVa\css\scss\guide.scss\A \A 50: }\A 51: .gui-user-info{\A 52: 	position: relative;\A 53: 	padding-left: 15px;\A 54: 	h3{\A 55: 		color: $red;\A 56: 		font-size: 18px;\A 57: 		font-weight: bold;\A 58: 	}\A 59: 	p{\A 60: 		font-weight: bold;"; }

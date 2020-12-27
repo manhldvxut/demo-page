@@ -83,11 +83,6 @@ $Dn:'DNI2014-DemiBold';
 		color: #fff;
 	}
 }
-@media(max-width: 767px){
-	.btn-red{
-		width: 100%;
-	}
-}
 .btn-gradien{
 	color: #fff;
 	font-size: 16px;
@@ -140,7 +135,7 @@ $Dn:'DNI2014-DemiBold';
 	    width: 12px;
 	    height: 14px;
 	    background: url(../images/top/icon_pdf.svg) no-repeat center;
-	    top: 0;
+	    top: -4px;
 	    bottom: 0;
 	    padding-left: 30px;
 	    margin: auto;
@@ -296,5 +291,14 @@ a{
 		    	}
 		    }
 		}
+	}
+}
+
+@media(max-width: 767px){
+	.btn-red{
+		width: 100%;
+	}
+	.btn-gradien{
+		width: 100%;
 	}
 }

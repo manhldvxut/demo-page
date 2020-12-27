@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UCAN</title>
+  <meta name="description" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:image" content="">
+  <link rel="shortcut icon" href="../assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/index.css">
+</head>
+
+<body>
+  <div class="page-content">
+    <header class="header">
+      <p class="header-logo">
+        <a href="/">
+          <img src="../assets/images/common/h-logo.svg" alt="">
+        </a>
+      </p>
+      <div class="header-btnGroup js-header-btnGroup">
+        <a href="/recruit/entry/" class="btn-blank-black"><span>マイナビからエントリー</span></a>
+        <a href="/recruit/entry/" class="btn-blank-black"><span>リクナビからエントリー</span></a>
+      </div>
+      <div class="btn-menu link">
+        <div class="btn-menu--inner js-btn-menu">
+          <div class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <p class="label js-label-menu">MENU</p>
+        </div>
+      </div>
+      <nav class="menu js-menu">
+        <div class="menu-inner js-menu-inner">
+          <div class="menu-box js-menu-box">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a class="menu-item--link" href="/recruit/">トップ</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-item--link" href="/recruit/about/">私たちについて</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-item--link" href="/recruit/interview/">社員インタビュー</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-item--link" href="/recruit/benefit/">制度・待遇について</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-item--link" href="/recruit/job/">仕事について</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-item--link" href="/recruit/guide/">採用について</a>
+              </li>
+            </ul>
+            <div class="menu-box--btnGroup">
+              <a href="/recruit/entry/" class="btn-blank-black"><span>マイナビからエントリー</span></a>
+              <a href="/recruit/entry/" class="btn-blank-black"><span>リクナビからエントリー</span></a>
+            </div>
+          </div>
+        </div>
+      </nav><!-- ./menu -->
+    </header><!-- ./header -->
+    <main class="main entry">
+      <div class="main-inner">
+        <section class="banner">
+          <div class="avarta"><img src="../assets/images/interview/banner.png" class="" alt=""></div>
+          <div class="triangle-abs"></div>
+        </section>
+        <section class="main-inner-content-page">
+          <h1 class="section-title">entry<span>エントリー</span></h1>
+          <div class="container">
+            <ul class="nav-small">
+              <li><a href="/recruit/">トップページ</a></li>
+              <li class="active">エントリー</li>
+            </ul>
+            <!-- end small-nav -->
+          <div class="content max-content">
+              <div class="box-contact">
+                  <div class="step-contact">
+                      <ul>
+                          <li>
+                              <div class="item-step text-center">
+                                  <div class="numb active">1</div>
+                                  <p>エントリー内容入力</p>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="item-step text-center">
+                                  <div class="numb">2</div>
+                                  <p>エントリー確認</p>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="item-step text-center">
+                                  <div class="numb">3</div>
+                                  <p>完了</p>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="box-txt">
+                      <p>エントリーご希望の方は下記フォームよりお送り下さい。 </p>
+                      <p>送信内容を確認させていただき担当よりご連絡致します。</p>
+                  </div>
+                  <div class="form-contact max-content">
+                      <form action="step02/index.html" id="form">
+                          <div class="list-item-form">
+                              <div class="item">
+                                  <div class="left">希望職種 <span>必須</span></div>
+                                  <div class="right">
+                                    <div class="choose-select max-inp">
+                                      <select name="" id="post-select" class="">
+                                       <option value="">選択してください</option>
+                                        <option value="">選択してください</option>
+                                        <option value="">選択してください</option>
+                                        <option value="">選択してください</option>
+                                        <option value="">選択してください</option>
+                                    </select>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="item">
+                                  <div class="left">希望勤務地 <span>必須</span></div>
+                                  <div class="right"><input type="text" id="furi-name" class="max-inp" placeholder="入力してください"></div>
+                              </div>
+
+                              <div class="item">
+                                <div class="left">氏名 <span>必須</span></div>
+                                <div class="right"><input type="text" id="name" class="max-inp" placeholder="入力してください"></div>
+                              </div>
+                              <div class="item">
+                                <div class="left">フリガナ <span>必須</span></div>
+                                <div class="right"><input type="text" id="name" class="max-inp" placeholder="入力してください"></div>
+                              </div>
+                              <div class="item">
+                                <div class="left">メールアドレス <span>必須</span></div>
+                                <div class="right"><input type="text" id="" class="max-inp" placeholder="入力してください"></div>
+                              </div>
+                              <div class="item">
+                                <div class="left">電話番号 <span>必須</span></div>
+                                <div class="right"><input type="text" id="" class="max-inp" placeholder="入力してください"></div>
+                              </div>
+                              <div class="item">
+                                  <div class="left">都道府県</div>
+                                  <div class="right">
+                                      <div class="choose-select max-inp">
+                                          <select name="" id="post-select" class="">
+                                              <option value="">選択してください</option>
+                                              <option value="">選択してください</option>
+                                              <option value="">選択してください</option>
+                                              <option value="">選択してください</option>
+                                              <option value="">選択してください</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="item">
+                                  <div class="left">住所</div>
+                                  <div class="right"><input type="text" id="post_adress" placeholder="入力してください"></div>
+                              </div>
+                              <div class="item">
+                                  <div class="left">建物名</div>
+                                  <div class="right"><input type="text" id="manson" placeholder="入力してください"></div>
+                              </div>
+                              <div class="item">
+                                <div class="left">性別</div>
+                                  <div class="right">
+                                      <ul>
+                                          <li>
+                                              <input type="radio" name="form-contact" value="男性" checked="" id="ct-1">
+                                              <label for="ct-1">男性</label>
+                                          </li>
+                                          <li>
+                                              <input type="radio" name="form-contact" value="女性" id="ct-2">
+                                              <label for="ct-2">女性</label>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div class="item">
+                                <div class="left">生年月日</div>
+                                <div class="right">
+                                  <ul class="list-inline">
+                                    <li class="list-inline-item choose-select choose-time">
+                                      <select name="year">
+                                        <option value="1990">1990</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1990">1990</option>
+                                      </select>
+                                      <label>年</label>
+                                    </li>
+                                    <li class="list-inline-item choose-select choose-time">
+                                      <select name="month">
+                                        <option value="01" selected="">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                      </select>
+                                      <label>月</label>
+                                    </li>
+                                    <li class="list-inline-item choose-select choose-time">
+                                      <select name="day">
+                                        <option value="01" selected="">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                      </select>
+                                      <label>日</label>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="left">学校名</div>
+                                <div class="right"><input type="text" id="company" class="max-inp" placeholder="入力してください"></div>
+                              </div>
+                              <div class="item">
+                                <div class="left">学部学科名</div>
+                                <div class="right"><input type="text" id="company" class="max-inp" placeholder="入力してください"></div>
+                              </div>
+                              <div class="item">
+                                <div class="left">卒業見込み</div>
+                                <div class="right">
+                                  <ul class="list-inline">
+                                    <li class="list-inline-item choose-select choose-time">
+                                      <select name="year">
+                                        <option value="1990">1990</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1990">1990</option>
+                                      </select>
+                                      <label>年</label>
+                                    </li>
+                                    <li class="list-inline-item choose-select choose-time">
+                                      <select name="month">
+                                        <option value="01" selected="">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                      </select>
+                                      <label>月</label>
+                                    </li>
+                                    <li class="list-inline-item choose-select choose-time">
+                                      <select name="day">
+                                        <option value="01" selected="">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                      </select>
+                                      <label>日</label>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="left">志望動機</div>
+                                <div class="right">
+                                  <div class="input-data">
+                                    <textarea name="" placeholder="入力して下さい" id="input-data" cols="15" rows="10"></textarea>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="left">自己PR</div>
+                                <div class="right">
+                                  <div class="input-data">
+                                    <textarea name="" placeholder="入力して下さい" id="input-data" cols="15" rows="10"></textarea>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="list-select-file">
+                                <ul class="file-select">
+                                  <li>履歴書の添付</li>
+                                  <li><input type="file" id="file" name="file" size="10"/></li>
+                                </ul>
+                                <ul class="file-select">
+                                  <li>職務経歴書の添付</li>
+                                  <li><input type="file" id="file" name="file" size="10"/></li>
+                                </ul>
+                              </div>
+                          </div>
+                          <div class="box-text-scroll">
+                            <div class="scrollbar" id="style-1">
+                              <div class="force-overflow">
+                                <p>当社は、お客様個人を識別できる情報（以下「個人情報」といいます。）を適切に保護する為に、以下の取り組みを実施いたします。</p>
+                                <ul>
+                                    <li>1.法令の遵守 <br>当社は、個人情報保護に関する関係法令、国が定める指針等及び社内規程を遵守致します。</li>
+                                    <li>2.個人情報の取得<br> 当社は、個人情報を取得する際には、その利用目的を明示し、お客様の同意の範囲内で、適正かつ公正な手段によって取得いたします。</li>
+
+                                    <li>3.利用目的 <br>当社は、お客様からご提供いただいた個人情報を、お客様とのご契約上の責務を果たすため、およびお客様に有用な情報をご提供するために利用いたします。</li>
+
+                                    <li>4.第三者提供 <br> 当社は、お客様の個人情報をあらかじめお客様の同意をいただいている場合および法令等で定められた場合、または当社と機密保持契約を締結している業務委託先に利用目的の達成に必要な範囲内で開示する場合を除き、第三者へ開示いたしません。</li>
+                                    <li>5.管理体制 <br> 当社は、お客様の個人情報保護のため、情報管理責任者や個人情報を取り扱う部門毎に部門別情報管理者を置き、個人情報の適切な管理に努めます。 また、業務に従事する者に対して適切な教育を実施いたします。</li>
+                                    <li>6.安全管理措置 <br>当社は、お客様からご提供いただいた個人情報に対して、不正アクセス・紛失・漏洩などを防止するためのセキュリティ対策を実施いたします。</li>
+                              </div>
+                            </div>
+                        </div>
+                          <div class="remember">
+                              <input type="checkbox" id="fruit1" name="fruit-1" value="remember">
+                              <label for="fruit1">プライバシーポリシーに同意する</label>
+                          </div>
+                          <div class="btn-contact">
+                              <button type="submit" class="path-bott">確認画面へ</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </section>
+      </div>
+    </main><!-- ./main -->
+    <footer class="footer js-footer">
+      <div class="footer-inner">
+        <div class="footer-entry">
+          <div class="footer-entry--inner fadeup fadeup-in">
+            <p class="footer-entry--title">エントリーフォームはこちら</p>
+            <div class="footer-entry--direct">
+              <a href="/recruit/entry/" class="btn-blank-black2"><span>マイナビからエントリー</span></a>
+              <a href="/recruit/entry/" class="btn-blank-black2"><span>リクナビからエントリー</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-logo">
+          <a href="">
+            <img src="../assets/images/common/footer-logo.svg" alt="">
+          </a>
+        </div>
+        <div class="footer-navWrapper container">
+          <ul class="footer-nav01">
+            <li class="footer-nav01--item">
+              <a href="/recruit/about/">私たちについて</a>
+            </li>
+            <li class="footer-nav01--item">
+              <a href="/recruit/job/">仕事について</a>
+            </li>
+            <li class="footer-nav01--item">
+              <a href="/recruit/benefit/">制度・待遇について</a>
+            </li>
+            <li class="footer-nav01--item">
+              <a href="/recruit/interview/">社員インタビュー</a>
+            </li>
+            <li class="footer-nav01--item">
+              <a href="/recruit/guide/">採用について</a>
+            </li>
+          </ul>
+          <ul class="footer-nav02">
+            <li class="footer-nav02--item">
+              <a href="/recruit/entry/" class="blank-link-black">マイナビ　エントリー</a>
+            </li>
+            <li class="footer-nav02--item">
+              <a href="/recruit/entry/" class="blank-link-black">リクナビ　エントリー</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyWrapper">
+        <div class="container">
+          <a href="/" class="blank-link-gray">コーポレートサイト</a>
+          <p class="footer-copy">Copyright © 2020 All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/lib/jquery-3.5.1.min.js"></script>
+  <!-- <script src="../assets/js/lib/slick.min.js"></script> -->
+  <script src="../assets/js/common.js"></script>
+</body>
+
+</html>

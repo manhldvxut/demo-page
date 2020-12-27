@@ -105,8 +105,8 @@ svg .a{
                 }
                 &:after {
                     content: "";
-                    width: 7px;
-                    height: 7px;
+                    width: 9px;
+                    height: 8px;
                     position: absolute;
                     background:url('../images/top/arrow.svg') no-repeat;
                     bottom: 10px;
@@ -195,7 +195,9 @@ svg .a{
         display: flex;
         flex-wrap: wrap;
         li{
-            flex: 1 0 0;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
             display: inline-flex;
             align-items:center;
             justify-content: space-between;
@@ -428,12 +430,6 @@ and (orientation : landscape) {
         background: url(../images/top/sp-arrow.svg) no-repeat;
         transition: .3s all;
     }
-    .menu ul li i.active:before{
-        width: 10px;
-        height: 10px;
-        background: url(../images/top/arrow-sub-down.svg) no-repeat;
-        transition:.3s all;
-    }
     i.d-none{
         display: block !important;
     }
@@ -541,6 +537,18 @@ section.footer .api li:hover svg .a{
     display: none;
 }
 @media(max-width: 960px){
+    .js-sub-menu{
+        transition: 0.5s all;
+    }
+    .js-sub-menu.active .sub-menu{
+        display: block;
+    }
+    .menu ul li i.active:before{
+        width: 10px;
+        height: 10px;
+        background: url(../images/top/arrow-sub-down.svg) no-repeat;
+        transition:.3s all;
+    }
     .sp-contact{
         padding: 20px 0;
         background: #585757;
@@ -560,6 +568,10 @@ section.footer .api li:hover svg .a{
         }
     }
     /*fix to man*/
+    .menu > ul > li:last-child{
+        margin-bottom: 0;
+    }
+    
     .pc-contact{
         display: none;
     }
@@ -590,13 +602,16 @@ section.footer .api li:hover svg .a{
                     background: inherit;
                     padding: 0;
                     display: flex !important;
+                    max-width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
                     margin-top: -40px;
                     padding-bottom: 20px;
                     .a{
                         fill: #fff;
                     }
                     li{
-                        flex: 0;
+                        flex: 1 0 0;
                         border: unset;
                         display: flex;
                         align-items: center;
@@ -639,5 +654,45 @@ section.footer .api li:hover svg .a{
         svg{
             width:96px;
         }
+    }
+    .header-menu .menu > ul.api li{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+@media(max-width: 768px){
+    .header-menu .menu > ul.api{
+        width: 100%;
+        max-width: 100%;
+    }
+    .header-menu{
+        .b{
+            fill: #585757;
+        }
+        &.active{
+            ul li{
+                &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4){
+                    a{
+                        z-index: 111;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 769px){
+    .submenu-info ul li{
+        position: relative;
+    }
+    .submenu-info ul li a{
+        width: 100%;
+        z-index: 1;
+    }
+    .submenu-info ul li span{
+        padding-right:0;
+        position: absolute;
+        right: 20px;
+        top: 35%; 
+        margin-top: 0;
     }
 }

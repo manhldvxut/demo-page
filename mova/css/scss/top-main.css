@@ -250,7 +250,8 @@
 /*servlist*/
 .service {
   z-index: 1;
-  position: relative; }
+  position: relative;
+  text-align: center; }
   .service h5 {
     margin-bottom: 22px; }
   .service h3 {
@@ -266,7 +267,7 @@
     margin-bottom: 130px; }
 
 .two-line {
-  display: block;
+  display: inline-block;
   text-align: center;
   color: #DC000C;
   font-size: 14px;
@@ -297,6 +298,7 @@
   z-index: 1; }
   .ser-list img {
     max-width: 170px;
+    min-height: 179px;
     margin-bottom: 40px;
     margin-top: -85px; }
   .ser-list h4 {
@@ -489,9 +491,9 @@
   color: #DC000C;
   border: 1px solid #DC000C;
   font-size: 12px;
-  padding: 4px 10px 2px 10px;
-  line-height: 1;
-  font-family: "YuGothic-Regular"; }
+  padding: 6px 10px 1px 10px;
+  font-family: "YuGothic-Regular";
+  line-height: 13px; }
 
 @media (max-width: 965px) {
   .title h2 {
@@ -569,7 +571,8 @@
     position: absolute;
     max-width: 90px;
     left: 20px;
-    top: 100px; }
+    top: 100px;
+    min-height: inherit; }
 
   .ser-list .desc {
     font-size: 13px;

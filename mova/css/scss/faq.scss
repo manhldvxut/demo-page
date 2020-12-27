@@ -72,7 +72,7 @@
                   border-radius: 2px;
                   transition: all .25s cubic-bezier(0.4, 0.0, 0.2, 1);
                   right: 20px;
-                  top: 48%;
+                  top: 48.4%;
               }
               &:before{
                   content: '';
@@ -134,7 +134,8 @@
 }
 @media (max-width: 767px){
     .faq .card .card-header .faq-title{
-      line-height: 10px;
+      line-height: 1.8;
+      padding-right: 40px;
     }
     .faq .card .card-header .faq-title:after{
       top: 49%;

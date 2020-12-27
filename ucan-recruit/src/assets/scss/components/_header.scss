@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* -------------------
+  HEADER
+--------------------*/
+.header {
+	@include mq() {
+		
+  }
+	&-logo {
+		position: fixed;
+		top: 36px;
+		left: 70px;
+		width: 150px;
+		z-index: 9999;
+		animation: fadeindown 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+		@include mq() {
+			width: 122px;
+			max-width: 28.12%;
+			top: 15px;
+	    left: 15px;
+	  }
+	}
+	&-btnGroup {
+		position: fixed;
+		top: 0;
+		right: 120px;
+		width: 220px;
+		height: 120px;
+		display: flex;
+		flex-wrap: wrap;
+		border-right: solid 1px #fff;
+		z-index: 9001;
+		animation: fadeindown 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+		&.hide {
+			display: none;
+		}
+		@include mq() {
+			display: none;
+	  }
+	  a {
+	  	&:first-child {
+	  		border-bottom: solid 1px #fff;
+	  	}
+	  }
+	}
+}

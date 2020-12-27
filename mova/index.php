@@ -32,6 +32,7 @@ switch ($request) {
 
         /*contact page*/
     case '/demo_MoVa/contact/' :
+    case '/demo_MoVa/contact' :
         require __DIR__ . '/views/contact/index.php';
         break;
         /*guide page*/
@@ -49,32 +50,46 @@ switch ($request) {
     case '/demo_MoVa/news/detail' :
         require __DIR__ . '/views/news/detail/index.php';
         break;
-            /*news page service*/
-    case '/demo_MoVa/service' :
-    case '/demo_MoVa/service/' :
-        require __DIR__ . '/views/service/index.php';
+        /*login*/
+    case '/demo_MoVa/login/' :
+    case '/demo_MoVa/login' :
+        require __DIR__ . '/views/login/index.php';
         break;
-        /*page sticker*/
-    case '/demo_MoVa/sticker' :
+        /*my page*/
+    case '/demo_MoVa/mypage/' :
+    case '/demo_MoVa/mypage' :
+        require __DIR__ . '/views/mypage/index.php';
+        break;
+        /*sticker*/
     case '/demo_MoVa/sticker/' :
+    case '/demo_MoVa/sticker' :
         require __DIR__ . '/views/sticker/index.php';
         break;
-
-        /*page detail sticker*/
+        /*sticker-detail*/
     case '/demo_MoVa/sticker/detail' :
     case '/demo_MoVa/sticker/detail/' :
         require __DIR__ . '/views/sticker/detail/index.php';
         break;
-
-        /*page login*/
-    case '/demo_MoVa/login' :
-    case '/demo_MoVa/login/' :
-        require __DIR__ . '/views/login/index.php';
+        /*service*/
+    case '/demo_MoVa/service/' :
+    case '/demo_MoVa/service' :
+        require __DIR__ . '/views/service/index.php';
         break;
-        /*page mypage*/
-    case '/demo_MoVa/mypage' :
-    case '/demo_MoVa/mypage/' :
-        require __DIR__ . '/views/mypage/index.php';
+        /*information*/
+    case '/demo_MoVa/information/' :
+    case '/demo_MoVa/information' :
+        require __DIR__ . '/views/information/index.php';
+        break;
+        /*login*/
+    case '/demo_MoVa/singin/' :
+    case '/demo_MoVa/singin' :
+        require __DIR__ . '/views/singin/index.php';
+        break;
+
+        /*reset - passowrd*/
+    case '/demo_MoVa/re-password/' :
+    case '/demo_MoVa/re-password' :
+        require __DIR__ . '/views/re-password/index.php';
         break;
 
 

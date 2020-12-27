@@ -54,18 +54,19 @@
 	h3{
 		color: $red;
 		font-size: 18px;
-		margin-bottom: 16px;
 		font-weight: bold;
 	}
 	p{
 		font-weight: bold;
 		color: $blue;
+		margin-bottom: 0;
+		line-height: 1.8;
 	}
 }
 .login-if{
 	margin-bottom: 80px;
 	.style-disc{
-		border: initial;
+		border: none;
 		padding:0;
 		padding-left: 0 !important;
 	}
@@ -101,6 +102,7 @@
 		left: 0;
 		right: 0;
 		margin: auto;
+		width: 100%;
 	}
 	h3{
 		font-size: 24px;
@@ -266,5 +268,292 @@
 	}
 	.gui-box{
 		padding-bottom:0;
+	}
+}
+/*sticker*/
+.sti-dropdw{
+	margin-bottom: 40px;
+	display: flex;
+	span.choose {
+	  color: #555;
+	  padding: 5px 0 10px;
+	  display: inherit
+	}
+	button{
+		position: relative;
+	    display: block;
+	    width: 144px;
+	    height: 60px;
+	    background: #DC000C;
+	    color: #fff;
+	    font-weight: bold;
+	    outline: auto;
+	    border-radius: 4px;
+	    cursor: pointer;
+	    font-size: 16px;
+	}
+
+	/*Styling Selectbox*/
+	.dropdown {
+	      width: 275px;
+	    height: 60px;
+	    border: 1px solid #DC0916;
+	    border-radius: 4px;
+	    margin-right: 20px;
+	    font-size: 16px;
+	    font-weight: bold;
+	    color: #DC000C;
+	    padding-left: 18px;
+	    position: relative;
+	    display: inline-flex;
+	    align-items:center;
+	    outline-color: #DC000C;
+	    appearance: none;
+	    background:#fff;
+	    position: relative;
+	    &:before{
+	    	position: absolute;
+		    content: "";
+		    width: 7px;
+		    height: 8px;
+		    background: url(../images/sticker/right.svg) no-repeat center;
+		    right: 22px;
+		    top: 0;
+		    bottom: 0;
+		    margin: auto;
+		    z-index: 1;
+		    transition: .3s all;
+	    }
+	    &.active{
+	    	&:before{
+	    		transform: rotate(90deg);
+	    	}
+	    }
+	}
+	.dropdown .select {
+	    cursor: pointer;
+	    display: block;
+	}
+	.dropdown .select > i {
+	    font-size: 13px;
+	    color: #888;
+	    cursor: pointer;
+	    transition: all .3s ease-in-out;
+	    float: right;
+	    line-height: 20px
+	}
+	.dropdown:hover {
+	    box-shadow: 0 0 4px rgb(204, 204, 204)
+	}
+	.dropdown:active {
+	    background-color: #f8f8f8
+	}
+	.dropdown.active:hover,
+	.dropdown.active {
+	    box-shadow: 0 0 4px rgb(204, 204, 204);
+	    border-radius: 2px 2px 0 0;
+	    background-color: #f8f8f8
+	}
+	.dropdown.active .select > i {
+	    transform: rotate(-90deg)
+	}
+	.dropdown .dropdown-menu {
+	    position: absolute;
+	    background-color: #fff;
+	    width: 100%;
+	    left: 0;
+	    margin-top: 1px;
+	    border-radius: 0 1px 2px 2px;
+	    overflow: hidden;
+	    display: none;
+	    max-height: 144px;
+	    overflow-y: auto;
+	    z-index: 9;
+	    color: $red;
+	    border:1px solid $red;
+	}
+	.dropdown .dropdown-menu li {
+	    padding: 20px 10px;
+	    transition: all .2s ease-in-out;
+	    cursor: pointer;
+	    font-size: 16px;
+	    border-bottom: 1px solid $red;
+	    &:last-child{
+	    	border-bottom:none;
+	    }
+	} 
+	.dropdown .dropdown-menu {
+	    padding: 0;
+	    list-style: none
+	}
+	.dropdown .dropdown-menu li:hover {
+	    background-color: $red;
+	    color: #fff;
+	}
+	.dropdown .dropdown-menu li:active {
+	    background-color: #e2e2e2
+	}
+
+}
+
+.sticker-content{
+	h5{
+		color:$red;
+		font-size: 32px;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 55px;
+	}
+}
+
+.sticker-content{
+	.login-if{
+		a{
+			color: $red;
+			text-decoration: underline;
+		}
+	}
+}
+.sticker-box{
+	&.recruit-top{
+		padding-top: 0;
+		margin-bottom: -40px;
+		img{
+			&:hover{
+				transform: scale(1.02);
+			}
+		}
+	}
+}
+.list-news .sticker-box .row{
+	margin: 0 -20px;
+}
+.list-news .sticker-box .row > .col-md-4{
+	padding: 0 20px;
+	overflow: hidden;
+}
+@media(max-width: 768px){
+	.sticker-content h5{
+		font-size: 5.0vw;
+	}
+
+	.list-news .sticker-box .row{
+		margin: 0 -10px;
+	}
+	.list-news .sticker-box .row > .col-md-4{
+		padding: 0 5px;
+	}
+}
+@media(min-width: 768px) and (max-width: 1024px){
+	.sti-dropdw .dropdown{
+		width: 47%;
+		margin-bottom: 20px;
+	}
+	.sti-dropdw{
+		flex-wrap: wrap;
+	}
+}
+/*slider*/
+.sticker-detail{
+	margin-bottom: 100px;
+	> .row{
+		margin: 0 -25px;
+		> .col-md-6{
+			padding: 0 25px;
+		}
+	}
+	.list-views{
+		margin-top: 40px;
+   		position: relative;
+   		padding-bottom: 20px;
+	    border-bottom: 1px solid #CDCDCD;
+	    margin-bottom: 60px;
+   		.carousel-indicators{
+   			position: relative;
+   			margin: 0 -10px;
+   			z-index: 1;
+   		 }
+   		 .col-md-6.item{
+   		 	padding: 0 10px;
+   		 }
+	}
+	.login-if{
+		a{
+			color: $red;
+			text-decoration: underline;
+		}
+	}
+}
+#carousel-sticker{
+	.carousel-control-next-icon, .carousel-control-prev-icon{
+		background: inherit;
+		display: block;
+	    margin: 30px auto;
+	    width: 11px;
+	    height: 11px;
+	    border-top: 2px solid #fff;
+	    border-left: 2px solid #fff;
+	    transform: rotate(135deg);
+	}
+	.carousel-control-prev-icon{
+		transform: rotate(-45deg);
+	}
+	.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover{
+		opacity: 1;
+	}
+	.carousel-indicators{
+		position: static;
+	}
+}
+.sticker-detail-info{
+	.news-red{
+		text-transform: uppercase;
+		display: inline-block;
+		font-size: 12px;
+		margin-bottom: 8px;
+	}
+	h2{
+		font-size: 20px;
+		font-weight: bold;
+		margin-bottom: 30px;
+	}
+	p{
+		margin-bottom: 40px;
+	}
+	.btn-gradien{
+		margin-bottom: 50px;
+	}
+}
+.sti-dropdw button{
+	outline: none;
+	border: none;
+}
+
+@media(max-width: 767px){
+	.sti-dropdw button{
+		margin: auto;
+	}
+	.sti-dropdw .dropdown{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.sti-dropdw{
+		display: block;
+	}
+	.sticker-detail {
+		margin-bottom: 80px;
+		.list-views{ 
+			margin-bottom: 30px;
+		}
+		.login-if{
+			margin-bottom: 40px;
+		}
+		p{
+			font-size: 14px;
+		}
+		.btn-gradien{
+			margin:auto;
+			margin-bottom: 40px;
+		}
 	}
 }

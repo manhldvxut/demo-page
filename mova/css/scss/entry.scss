@@ -273,7 +273,7 @@
         &.active{
             background: $red;
             color: #fff;
-            border: initial;
+            border: none;
         }
     }
     p{
@@ -352,7 +352,7 @@
                 }
             }
 
-            input[type="text"]{
+            input[type="text"], input[type="password"]{
                 width: 100%;
                 height: 50px;
                 border: inherit;
@@ -418,7 +418,7 @@
                     align-items: center;
                 }
             }
-            input[type="text"]{
+            input[type="text"], input[type="password"]{
                 width: 100%;
                 height: 50px;
                 border: inherit;
@@ -483,7 +483,7 @@
         margin-top: 45px;
         margin-bottom: 60px;
         position: relative;
-        z-index:111;
+        z-index:2;
         .scrollbar {
             height: 250px;
             width: 100%;
@@ -511,6 +511,8 @@
             background-position: right bottom;
             background-size: 200% 100%;
             transition:all .4s ease;
+            outline: inherit;
+            cursor: pointer;
             &:hover{
                 background-position: left bottom;
                 color: #fff;
@@ -587,7 +589,7 @@
 .form-contact .list-item-form .item .right{
     flex:0 0 45%;
     &.op-cic{
-        flex:0 0 67%;
+        flex:0 0 61%;
     }
 }
 .list-select-file .out-put-data {
@@ -628,40 +630,69 @@
     .form-contact .btn-contact button{
         width: 100%;
     }
-    input[type=checkbox]:checked + label:after {
-        -webkit-transition: .2s all;
-        transition: .2s all;
-        -webkit-transform: scale(1) rotate(45deg) !important;
-        transform: scale(1) rotate(45deg) !important;
-        content: '';
-        display: block;
-        top: 2px;
-        width: 7px;
-        height: 12px;
-        border: solid #fff;
-        border-width: 0 2px 2px 0;
-        position: absolute;
-        left: 6px;
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
+    .box-contact{
+            input[type=checkbox]:checked + label:after {
+            -webkit-transition: .2s all;
+            transition: .2s all;
+            -webkit-transform: scale(1) rotate(45deg) !important;
+            transform: scale(1) rotate(45deg) !important;
+            content: '';
+            display: block;
+            top: 2px;
+            width: 7px;
+            height: 12px;
+            border: solid #fff;
+            border-width: 0 2px 2px 0;
+            position: absolute;
+            left: 6px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        input[type=checkbox] + label:after {
+            -webkit-transition: .2s all;
+            transition: .2s all;
+            -webkit-transform: scale(1) rotate(45deg) !important;
+            transform: scale(1) rotate(45deg) !important;
+            content: '';
+            display: block;
+            top: 2px;
+            width: 6px;
+            height: 12px;
+            border: solid #fff;
+            border-width: 0 2px 2px 0;
+            position: absolute;
+            left: 8px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        input[type=checkbox] + label:before {
+            width: 20px;
+            height: 20px;
+            vertical-align: sub;
+        }
+
+        input[type=checkbox] + label {
+            margin-bottom: 0;
+        }
+        .form-contact .right ul {
+            flex-wrap: wrap;
+        }
+
+        [type="radio"]:checked + label:before, [type="radio"]:not(:checked) + label:before {
+            width: 20px;
+            height: 20px;
+            top: 5px;
+        }
+
+        [type="radio"]:checked + label, [type="radio"]:not(:checked) + label {
+            padding-left: 30px;
+        }
+
+        [type="radio"]:checked + label:after, [type="radio"]:not(:checked) + label:after {
+            left: 3px;
+        }
     }
-    input[type=checkbox] + label:after {
-        -webkit-transition: .2s all;
-        transition: .2s all;
-        -webkit-transform: scale(1) rotate(45deg) !important;
-        transform: scale(1) rotate(45deg) !important;
-        content: '';
-        display: block;
-        top: 2px;
-        width: 6px;
-        height: 12px;
-        border: solid #fff;
-        border-width: 0 2px 2px 0;
-        position: absolute;
-        left: 8px;
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
+    
     .file-select{
         display: block;
     }
@@ -684,7 +715,7 @@
         margin-bottom: 10px;
     }
 
-    .form-contact .item input[type="text"] {
+    .form-contact .item input[type="text"], .form-contact .item input[type="password"] {
         padding: 0 10px;
         height: 40px;
     }
@@ -700,32 +731,7 @@
         padding: 15px;
     }
 
-    input[type=checkbox] + label:before {
-        width: 20px;
-        height: 20px;
-        vertical-align: sub;
-    }
-
-    input[type=checkbox] + label {
-        margin-bottom: 0;
-    }
-    .form-contact .right ul {
-        flex-wrap: wrap;
-    }
-
-    [type="radio"]:checked + label:before, [type="radio"]:not(:checked) + label:before {
-        width: 20px;
-        height: 20px;
-        top: 5px;
-    }
-
-    [type="radio"]:checked + label, [type="radio"]:not(:checked) + label {
-        padding-left: 30px;
-    }
-
-    [type="radio"]:checked + label:after, [type="radio"]:not(:checked) + label:after {
-        left: 5px;
-    }
+    
     .box-txt p {
         font-size: 14px;
     }
@@ -839,4 +845,67 @@
     .step-contact ul{
         padding-left:0;
     }
+}
+/*singin*/
+.singin{
+    .file::-webkit-file-upload-button{
+        background: $red;
+        font-size: 14px;
+        padding: 3px 15px;
+        padding:5px 10px;
+        color: #fff;
+        box-shadow: inherit;
+        border:inherit;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        outline: inherit;
+    }
+    .file{
+        margin-top: 12px;
+        outline: inherit;
+    }
+    h3{
+        font-size: 24px;
+        font-family: "YuGothic-Bold";
+        color: #000;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .list-item-form{
+        margin-bottom: 60px;
+    }
+    .right.op-cic{
+        label{
+            margin-right: 20px;
+        }
+    }
+}
+
+
+@media(max-width: 768px){
+    .singin .file{
+        font-size: 14px;
+    }
+    .singin h3{
+        margin-top: 30px;
+    }
+    .form-contact .list-item-form .item .left span{
+        line-height: 15px;
+    }
+}
+.guide-container .singin small{
+    margin-bottom: 15px;
+}
+@media(max-width: 360px){
+    .form-contact .list-item-form .item .choose-select.choose-time{
+        width: 100px;
+    }
+}
+@media(max-width: 320px){
+    .form-contact .list-item-form .item .choose-select.choose-time{
+        width: 85px;
+    }
+}
+button, input, optgroup, select, textarea{
+    font-size: 14px;
 }

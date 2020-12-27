@@ -1,0 +1,17 @@
+@-webkit-keyframes dotRun {
+  0% {
+    transform: translate(-50%, -100%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  } 
+}
+
+@keyframes dotRun {
+  0% {
+    transform: translate(-50%, -100%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  } 
+}
